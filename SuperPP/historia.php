@@ -5,28 +5,29 @@
 <head>
 	<title>Ttm</title>
 	<link rel="stylesheet" type="text/css" href="css/estilotm.css"/> 
-	<!--<script type="text/javascript" src="./js/dinamico.js"></script>-->
+	<script type="text/javascript" src="js/fecha.js"></script>
 </head>
-
 <body>
 	<header>
-         <p align="left"> Miercoles, 21 de mayo de 2014 </p>
+		 <script type="text/javascript">
+  			document.write(retornarFecha());
+         </script>
 	</header>
 	<nav>
 			<ul id="contenedorMenu">
-				<li><a href="home.html">Inicio</a></li>
-				<li><a href="historia.html">Historia</a></li>
-				<li><a href="reglamento.html">Reglamento</a></li>
+				<li><a href="home.php">Inicio</a></li>
+				<li><a href="historia.php">Historia</a></li>
+				<li><a href="reglamento.php">Reglamento</a></li>
 				<li><a>Materiales</a>			
                     <ul>
-						<li><a href="gomas.html">Gomas</a></li>
-						<li><a href="maderas.html">Maderas</a></li>
+						<li><a href="gomas.php">Gomas</a></li>
+						<li><a href="maderas.php">Maderas</a></li>
 					</ul>
 				</li>
-				<li><a href="jugadores.html">Jugadores</a>
+				<li><a href="jugadores.php">Jugadores</a>
 					<ul>
-						<li><a href="jugadores_mundiales.html">Mundiales</a></li>
-						<li><a href="jugadores_regionales.html">Regionales</a></li>
+						<li><a href="jugadores_mundiales.php">Mundiales</a></li>
+						<li><a href="jugadores_nacionales.php">Regionales</a></li>
 					</ul>	
 
 				</li>
