@@ -1,0 +1,1273 @@
+MIME-Version: 1.0
+Content-Location: file:///C:/0E6462CF/Casodeuso.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 11">
+<meta name=3DOriginator content=3D"Microsoft Word 11">
+<link rel=3DFile-List href=3D"Casodeuso_archivos/filelist.xml">
+<title>Caso de uso</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>JuanI</o:Author>
+  <o:LastAuthor>JuanI</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>19</o:TotalTime>
+  <o:Created>2014-06-25T20:38:00Z</o:Created>
+  <o:LastSaved>2014-06-25T20:38:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>358</o:Words>
+  <o:Characters>2045</o:Characters>
+  <o:Lines>17</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2399</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" LatentStyleCount=3D"156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-2;
+	mso-list-type:simple;
+	mso-list-template-ids:-335759650;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:*;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level1 lfo1
+	{mso-level-numbering:continue;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:.25in;
+	mso-level-legacy-space:0in;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Tabla con cuadr\00EDcula";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+</head>
+
+<body lang=3DEN-US style=3D'tab-interval:.5in'>
+
+<div class=3DSection1>
+
+<table class=3DMsoTableGrid border=3D1 cellspacing=3D0 cellpadding=3D0 widt=
+h=3D630
+ style=3D'width:472.25pt;border-collapse:collapse;border:none;mso-border-al=
+t:
+ solid windowtext .5pt;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5=
+.4pt;
+ mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid win=
+dowtext'>
+ <tr style=3D'mso-yfti-irow:0;mso-yfti-firstrow:yes;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:#3366FF;mso-ansi-language:EN'>Caso</span></span><span lang=
+=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:#3366FF;mso-ansi-language:EN'> de <span class=3DSpellE>uso</span></=
+span><span
+  style=3D'color:#3366FF'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:#3366FF;mso-ansi-language:EN'>Descripcion</span></span><span
+  style=3D'color:#3366FF'><o:p></o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border:solid windowtex=
+t 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:#3366FF;mso-ansi-language:EN'>Actor <span class=3DSpellE>primario</=
+span></span><span
+  style=3D'color:#3366FF'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border:solid windowt=
+ext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:#3366FF;mso-ansi-language:EN'>Especificaci&oacute;n</span><=
+/span><span
+  style=3D'color:#3366FF'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:1;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:ES'>Ver Inicio</span><span lang=3DES
+  style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  mso-ansi-language:ES'>Este caso de uso se utiliza para retornar al inicio=
+ de
+  la p&aacute;gina</span><span lang=3DES style=3D'mso-ansi-language:ES'><o:=
+p></o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  usuario desea volver a la p&aacute;gina inicial<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  sistema retorna el inicio de p&aacute;gina<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>termina</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:2;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:red;mso-ansi-language:EN'>Ver</span></span><span lang=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:EN'> <span class=3DSpellE>historia</span></sp=
+an><span
+  lang=3DES style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  mso-ansi-language:ES'>Este caso de uso se utiliza para visualizar la
+  rese&ntilde;a hist&oacute;rica del tenis de mesa</span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  usuario desea ver la rese&ntilde;a historia<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  sistema retorna la rese&ntilde;a hist&oacute;rica<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>termina</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:3;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:red;mso-ansi-language:EN'>Ver</span></span><span lang=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:EN'> <span class=3DSpellE>reglamento</span></=
+span><span
+  lang=3DES style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'margin-bottom:8.0pt;text-ali=
+gn:center;
+  line-height:12.95pt;mso-layout-grid-align:none;text-autospace:none'><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:ES'>Este caso de uso se utiliza para visualizar=
+ el
+  reglamento del ping pong<o:p></o:p></span></p>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'mso-ansi-language:ES'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  usuario desea consultar el reglamento de tenis de mesa<o:p></o:p></span><=
+/p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>sistema</span> <span class=3DSpellE>retorna</span> el <span
+  class=3DSpellE>reglamento</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>termina</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:4;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:red;mso-ansi-language:EN'>Consultar</span></span><span lang=
+=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:EN'> <span class=3DSpellE>materiales</span></=
+span><span
+  lang=3DES style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'margin-bottom:8.0pt;text-ali=
+gn:center;
+  line-height:12.95pt;mso-layout-grid-align:none;text-autospace:none'><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:ES'>Este caso de uso se utiliza para hacer la
+  consulta acerca de los materiales utilizados para armar paletas de tenis =
+de
+  mesa<o:p></o:p></span></p>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'mso-ansi-language:ES'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando el usuario desea consultar los materiales<o:p></o:p></spa=
+n></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>[I=
+NCLUDE]
+  <span class=3DSpellE>Ver</span> <span class=3DSpellE>gomas</span><o:p></o=
+:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>[I=
+NCLUDE]
+  <span class=3DSpellE>Ver</span> <span class=3DSpellE>maderas</span><o:p><=
+/o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>sistema</span> <span class=3DSpellE>lista</span> <span
+  class=3DSpellE>los</span> <span class=3DSpellE>materiales</span><o:p></o:=
+p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  usuario ingresa el tipo de material<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>sistema</span> <span class=3DSpellE>retorna</span> el <span
+  class=3DSpellE>listado</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>finaliza</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:5;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:red;mso-ansi-language:EN'>Consultar</span></span><span lang=
+=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:EN'> <span class=3DSpellE>jugadores</span></s=
+pan><span
+  lang=3DES style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'margin-bottom:8.0pt;text-ali=
+gn:center;
+  line-height:12.95pt;mso-layout-grid-align:none;text-autospace:none'><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:ES'>Este caso de uso se utiliza para hacer la
+  consulta acerca de los<span style=3D'mso-spacerun:yes'>&nbsp; </span>juga=
+dores
+  de las distintas categor&iacute;as<span style=3D'mso-spacerun:yes'>&nbsp;
+  </span>de tenis de mesa<o:p></o:p></span></p>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'mso-ansi-language:ES'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando el usuario desea consultar los jugadores<o:p></o:p></span=
+></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>[I=
+NCLUDE]
+  <span class=3DSpellE>Ver</span> <span class=3DSpellE>mundiales</span><o:p=
+></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>[I=
+NCLUDE]
+  <span class=3DSpellE>Ver</span> <span class=3DSpellE>nacionales</span><o:=
+p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>sistema</span> <span class=3DSpellE>lista</span> <span
+  class=3DSpellE>las</span> <span class=3DSpellE>categor&iacute;as</span><o=
+:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>usuario</span> <span class=3DSpellE>ingresa</span> la <span
+  class=3DSpellE>categor&iacute;a</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>sistema</span> <span class=3DSpellE>retorna</span> el <span=
+
+  class=3DSpellE>listado</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>finaliza</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:6;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:red;mso-ansi-language:EN'>Ver</span></span><span lang=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:EN'> <span class=3DSpellE>gomas</span></span>=
+<span
+  lang=3DES style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'margin-bottom:8.0pt;text-ali=
+gn:center;
+  line-height:12.95pt;mso-layout-grid-align:none;text-autospace:none'><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:ES'>Este caso de uso se utiliza para listar los
+  tipos de gomas <span style=3D'mso-spacerun:yes'>&nbsp;</span>por distribu=
+idor utilizados
+  en las paletas<o:p></o:p></span></p>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'mso-ansi-language:ES'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  sistema retorna el listado de gomas<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>finaliza</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:7;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:red;mso-ansi-language:EN'>Ver</span></span><span lang=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:EN'> <span class=3DSpellE>maderas</span></spa=
+n><span
+  lang=3DES style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'margin-bottom:8.0pt;text-ali=
+gn:center;
+  line-height:12.95pt;mso-layout-grid-align:none;text-autospace:none'><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:ES'>Este caso de uso se utiliza para listar los
+  tipos de maderas por distribuidor utilizados en las paletas<o:p></o:p></s=
+pan></p>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'mso-ansi-language:ES'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  sistema retorna el listado de maderas<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>finaliza</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:8;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:red;mso-ansi-language:EN'>Ver</span></span><span lang=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:EN'> <span class=3DSpellE>mundiales</span></s=
+pan><span
+  lang=3DES style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'margin-bottom:8.0pt;text-ali=
+gn:center;
+  line-height:12.95pt;mso-layout-grid-align:none;text-autospace:none'><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:ES'>Este caso de uso se utiliza para listar los=
+ jugadores
+  con categor&iacute;a mundial<o:p></o:p></span></p>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'mso-ansi-language:ES'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  sistema retorna la lista de jugadores mundiales<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>termina</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style=3D'mso-yfti-irow:9;mso-yfti-lastrow:yes;height:30.4pt'>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border:solid windowtex=
+t 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:s=
+olid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt;height:30.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;color:red;mso-ansi-language:EN'>Ver</span></span><span lang=3DEN
+  style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-family:Calibr=
+i;
+  color:red;mso-ansi-language:EN'> <span class=3DSpellE>nacionales</span></=
+span><span
+  lang=3DES style=3D'color:red;mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D119 valign=3Dtop style=3D'width:89.6pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'margin-bottom:8.0pt;text-ali=
+gn:center;
+  line-height:12.95pt;mso-layout-grid-align:none;text-autospace:none'><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:ES'>Este caso de uso se utiliza para listar los
+  jugadores con categor&iacute;a nacional<o:p></o:p></span></p>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span lan=
+g=3DES
+  style=3D'mso-ansi-language:ES'><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width=3D108 valign=3Dtop style=3D'width:81.0pt;border-top:none;border=
+-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal align=3Dcenter style=3D'text-align:center'><span cla=
+ss=3DSpellE><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Calibri;mso-bidi-font-fam=
+ily:
+  Calibri;mso-ansi-language:EN'>Usuario</span></span><span lang=3DES
+  style=3D'mso-ansi-language:ES'><o:p></o:p></span></p>
+  </td>
+  <td width=3D283 valign=3Dtop style=3D'width:212.05pt;border-top:none;bord=
+er-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1=
+.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid window=
+text .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:3=
+0.4pt'>
+  <p class=3DMsoNormal style=3D'margin-bottom:8.0pt;line-height:12.95pt;mso=
+-layout-grid-align:
+  none;text-autospace:none'><span lang=3DES style=3D'font-size:11.0pt;font-=
+family:
+  Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El caso de uso
+  comienza cuando<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DES style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:ES'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DES style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:ES'>El
+  sistema retorna la lista de jugadores nacionales<o:p></o:p></span></p>
+  <p class=3DMsoNormal style=3D'margin-top:0in;margin-right:0in;margin-bott=
+om:8.0pt;
+  margin-left:53.25pt;text-indent:-.25in;line-height:12.95pt;mso-list:l0 le=
+vel1 lfo1;
+  mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+  lang=3DEN style=3D'font-size:11.0pt;font-family:Symbol;mso-fareast-font-f=
+amily:
+  Symbol;mso-bidi-font-family:Symbol;mso-ansi-language:EN'><span
+  style=3D'mso-list:Ignore'>&middot;<span style=3D'font:7.0pt "Times New Ro=
+man"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span lang=3DEN style=3D'font-size:11.0pt;
+  font-family:Calibri;mso-bidi-font-family:Calibri;mso-ansi-language:EN'>El=
+ <span
+  class=3DSpellE>caso</span> de <span class=3DSpellE>uso</span> <span class=
+=3DSpellE>termina</span><o:p></o:p></span></p>
+  <p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>=
+&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=3DMsoNormal><span lang=3DES style=3D'mso-ansi-language:ES'><o:p>&n=
+bsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
