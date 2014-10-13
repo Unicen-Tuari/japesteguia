@@ -21,6 +21,7 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+            
                     <li>
                         <a class="page-scroll" href="#inicio">Inicio</a>
                     </li>
@@ -30,24 +31,35 @@
                     <li>
                         <a class="page-scroll" href="#reglamento">Reglamento</a>
                     </li>
-                    <li>
+            
+                    <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle">         Jugadores <b class="caret"></b></a>
+                        <ul class="dropdown-menu"data-no-collapse="true">
+
+                            <li><a class="page-scroll" href="#portfolio">Mundiales</a></li>
+                            <li><a class="page-scroll" href="#portfolio2">Nacionales</a></li>
+                        </ul>
+                    </li>
+                   <!-- <li>
                         <a class="page-scroll" href="#portfolio">Mundiales</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio2">Nacionales</a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#materiales">Materiales</a>
                     </li> -->
+                    <li>
+                        <a class="page-scroll" href="#inicio">Materiales</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#contact">Juego</a>
                     </li>
                 </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
 
     <!-- Header -->
     <header>

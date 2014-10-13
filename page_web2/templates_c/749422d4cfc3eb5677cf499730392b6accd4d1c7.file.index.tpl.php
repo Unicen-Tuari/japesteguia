@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-12 05:16:52
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-13 02:51:10
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1517954347f7a478e04-68418583%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1413083811,
+      1 => 1413161465,
       2 => 'file',
     ),
   ),
@@ -49,6 +49,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+            
                     <li>
                         <a class="page-scroll" href="#inicio">Inicio</a>
                     </li>
@@ -58,24 +59,35 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li>
                         <a class="page-scroll" href="#reglamento">Reglamento</a>
                     </li>
-                    <li>
+            
+                    <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle">         Jugadores <b class="caret"></b></a>
+                        <ul class="dropdown-menu"data-no-collapse="true">
+
+                            <li><a class="page-scroll" href="#portfolio">Mundiales</a></li>
+                            <li><a class="page-scroll" href="#portfolio2">Nacionales</a></li>
+                        </ul>
+                    </li>
+                   <!-- <li>
                         <a class="page-scroll" href="#portfolio">Mundiales</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio2">Nacionales</a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#materiales">Materiales</a>
                     </li> -->
+                    <li>
+                        <a class="page-scroll" href="#inicio">Materiales</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#contact">Juego</a>
                     </li>
                 </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
 
     <!-- Header -->
     <header>
