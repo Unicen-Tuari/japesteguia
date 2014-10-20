@@ -210,7 +210,6 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
-    text-align: center;
 }
 
 .navbar-default .nav li a:hover,
@@ -950,14 +949,14 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
-/*modificaciones propias*/
+
 .navbar-nav>li>.dropdown-menu{
     background-color: #e7e7e7;
     border: none;
     border-radius: 0px;
 }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
-    background-color: #a7a7a7;
+    background-color: #e7e7e7;
 }
 .dropdown-menu{
     min-width: 144px;
@@ -965,27 +964,4 @@ body {
 .navbar-default .dropdown-menu li a{
     padding:3px 10px;
     color:#333;
-}
-
-th{
-    text-align: center;
-}
-
-tr.warning{
-    border-color: #fed136;
-    background-color: #fed136;
-}
-
-section h2.section-heading {
-    margin-top: -20px;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-
-.formu .col-md-6 {
-width: 100%;
-}
-
-section#contact .text-danger {
-color: #fed136;
 }

@@ -16,23 +16,34 @@
 		$controller = new IndexController();
 		$controller->actionIndex();		
 	}
-	// else if($_REQUEST['action']=='listarJugadores')
-	// {
-		// include "./controllers/PersonaController.php";
-		// $c = new PersonaController();
-		// $c->actionListar();
-	// }
-	// else if($_REQUEST['action']=='listarMateriales')
-	// {
-		// if(array_key_exists('id', $_GET)){
-		// 	include "./controllers/PersonaController.php";
-		// 	$c = new PersonaController();
-		// 	$c->actionEditar($_GET['id']);
-		// }
-		// else {
-		// 	echo "Error de Parametros";
-		// }
-	// }
+	else if($_REQUEST['action']=='mostrarJugador')
+	{
+		if(array_key_exists('id_jugador', $_GET)){
+			if (isset($_GET['id_jugador'])) {
+			include "./controllers/JugadorController.php";
+			// print_r($_GET) ;
+			$controller_j = new JugadorController();
+			$controller_j->actionMostrarJugador($_GET['id_jugador']);
+			}
+		else {
+			echo "Error de Parametros";
+		}
+
+		}	
+	}
+	else if($_REQUEST['action']=='listarMateriales')
+	{
+		if(array_key_exists('id_mat', $_GET)){
+			if (isset($_GET['id_mat'])) {
+				include "./controllers/MaterialController.php";
+				$mat = new MaterialController();
+				$mat->actionMostrarMaterial($_GET['id_mat']);
+			}
+		}
+		else {
+			echo "Error de Parametros";
+		}
+	}
 	else if($_REQUEST['action']=='jugar')
 	{
 
@@ -45,28 +56,7 @@
 
 	
 
-	// else if($_REQUEST['action']=='listarPersonas')
-	// {
-	// 	include "./controllers/PersonaController.php";
-	// 	$c = new PersonaController();
-	// 	$c->actionListar();
-	// }
-	// else if($_REQUEST['action']=='editarPersonas')
-	// {
-	// 	if(array_key_exists('id', $_GET)){
-	// 		include "./controllers/PersonaController.php";
-	// 		$c = new PersonaController();
-	// 		$c->actionEditar($_GET['id']);
-	// 	}
-	// 	else {
-	// 		echo "Error de Parametros";
-	// 	}
-	// }
-	// else 
-	// {
-	// 	echo "ERROR ACCION NO VALIDA";
-	// }
-		 
+	
 
 
 ?>

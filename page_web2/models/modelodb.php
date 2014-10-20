@@ -8,7 +8,8 @@ abstract class ModeloDB{
 	private $db = 'tetm';
 	protected $conn = null;
 	
-	protected abstract function load_jbasico();
+	protected abstract function load();
+
 	
 	
 	protected function connect(){
