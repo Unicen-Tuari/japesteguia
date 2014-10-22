@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-20 00:44:59
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-22 06:35:43
          compiled from ".\templates\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2769154443eeb50d6b3-98753996%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1890554465cdec98ec6-95670962%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1412704344,
+      1 => 1413952540,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2769154443eeb50d6b3-98753996',
+  'nocache_hash' => '1890554465cdec98ec6-95670962',
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_54443eeb59df53_81956580',
+  'unifunc' => 'content_54465cdece9026_05746311',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54443eeb59df53_81956580')) {function content_54443eeb59df53_81956580($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_54465cdece9026_05746311')) {function content_54465cdece9026_05746311($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -30,7 +30,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ttm</title>
+    <title>Tetm</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">

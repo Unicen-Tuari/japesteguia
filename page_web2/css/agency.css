@@ -986,6 +986,41 @@ section h2.section-heading {
 width: 100%;
 }
 
-section#contact .text-danger {
+section #contact .text-danger {
 color: #fed136;
+}
+
+/*.portfolio_j p {
+font-size: 14px;
+line-height: 1.75;
+padding: 3px;
+}*/
+/*.portfolio-modal .modal-content p {
+margin-bottom: 5px;
+}
+#porfolio_j p{
+    margin-bottom: 5px;
+}*/
+/*.portfolio-modal .modal-content #portfolio_j p {
+margin-bottom: 2px;
+}*/
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 5px;
+}
+
+/*.modal-content img{
+
+    height: 302px;
+    width: 400px;
+}
+
+*/
+
+
+#contact img {
+   margin-top: 20px;
+}
+#registro .btn-primary{
+margin-top: 40px;
 }

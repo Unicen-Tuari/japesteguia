@@ -16,7 +16,7 @@ class JugadorView extends View	{
 		$this->smarty->assign("ipj", $i_p_j);
 	}
 	function show_videos($vid_j){
-		$this->smarty->assign("video", $vid_j);
+		$this->smarty->assign("videos", $vid_j);
 	}
 
 	function render_modal(){

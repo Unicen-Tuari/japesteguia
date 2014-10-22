@@ -12,7 +12,6 @@ class JugadorController{
 		$i_p_j=$jugadores->load_personal_information($id_jugador);
 		$vid_j=$jugadores->load_videos($id_jugador);
 		// echo '<pre>';
-		// print_r($img_j);
 		// print_r($i_p_j);
 		// print_r($vid_j);
 		// echo '</pre>';
