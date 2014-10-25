@@ -1024,3 +1024,23 @@ margin-bottom: 2px;
 #registro .btn-primary{
 margin-top: 40px;
 }
+
+
+/*--------issues modal con fondo visible---------*/
+
+
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.modal.fade.in {
+  top: 15%;
+  left: 5%;
+  bottom: 15%;
+  right: 5%;
+}
+
+/*----------------------------------*/
