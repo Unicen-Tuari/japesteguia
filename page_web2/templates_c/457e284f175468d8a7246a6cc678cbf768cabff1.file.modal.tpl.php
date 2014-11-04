@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-22 06:04:25
+<?php /* Smarty version Smarty-3.1.14, created on 2014-10-22 17:13:30
          compiled from ".\templates\modal.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1901154465cf3d68a19-99133827%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '457e284f175468d8a7246a6cc678cbf768cabff1' => 
     array (
       0 => '.\\templates\\modal.tpl',
-      1 => 1413950655,
+      1 => 1413951798,
       2 => 'file',
     ),
   ),
@@ -52,11 +52,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
  </p>
         <p class="item-intro text-muted">Descripcion</p>
      </div>
-     <!-- <ul class="list-inline">
-         <li>Date: July 2014</li>
-         <li>Client: Round Icons</li>
-         <li>Category: Graphic Design</li>
-    </ul> -->
     <h3>Videos</h3>
     <div id="videos_j">
       <?php  $_smarty_tpl->tpl_vars['video'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['video']->_loop = false;
