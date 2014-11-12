@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-21 15:17:18
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-11 23:47:08
          compiled from ".\templates\footer.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1628654465cded7d777-84232300%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1be7ff7fdee636597edd726ee98dfef4bfd55d1f' => 
     array (
       0 => '.\\templates\\footer.tpl',
-      1 => 1413764059,
+      1 => 1415746023,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
   'unifunc' => 'content_54465cdeda8717_14175233',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54465cdeda8717_14175233')) {function content_54465cdeda8717_14175233($_smarty_tpl) {?> 
     <footer>
@@ -57,7 +57,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>

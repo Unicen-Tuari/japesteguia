@@ -50,7 +50,7 @@
                         <a class="page-scroll" href="#materiales">Materiales</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Juego</a>
+                        <a class="page-scroll" href="#login">Juego</a>
                     </li>
                 </ul>
 
@@ -466,6 +466,54 @@
         </div>
     </aside>
 
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-lg-6 text-left-center">
+                        <h3>Login</h3>
+                    </div>
+                    <form name="loginForm" id="loginForm" method="post" action="index.php?action=login" >
+                        <div class="row">
+                            <div class="formu">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="user" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="pass" class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                    
+                                    <button type="submit">loguearse</button>
+                                </div>
+                        </div>
+                    </form>
+                    <script src="./js/check_login.js"></script>
+                </div>
+                <div class="col-lg-6">
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <div class="team-member">
+                                        <img src="img/team/logo.png" class="img-responsive img-circle" alt="">
+                                     </div>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-xl"<a href="#registro" class="portfolio-link" data-toggle="modal"></a>registrarse</button>
+                                </div>
+                </div>
+        </div>
+    </section>
+
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -479,16 +527,18 @@
                     <div class="col-lg-6 text-left-center">
                         <h3>Login</h3>
                     </div>
-                    <form name="sentMessage" id="contactForm" novalidate>
+                   <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
+                    <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=login" >
+                       <!--  <form method="post" action="index.php?action=login"> -->
                         <div class="row">
                             <div class="formu">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <input type="text" name="user" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <input type="text" name="pass" class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     
@@ -497,11 +547,14 @@
                             <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
-                                    <button type="submit" class="btn btn-xl"   
-                                    <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button>
+                                    <!-- <button type="submit" class="btn btn-xl"   
+                                    <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button> -->
+                                    <button type="submit" class="btn btn-xl" >  
+                                    loguearse</button>
                                 </div>
                         </div>
                     </form>
+                    <script src="./js/check_login.js"></script>
                 </div>
                 <div class="col-lg-6">
                     
@@ -573,7 +626,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+                        <div id="calendario_modal" class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Calendario</h2>
                             <p class="item-intro text-muted">Configure turno</p>

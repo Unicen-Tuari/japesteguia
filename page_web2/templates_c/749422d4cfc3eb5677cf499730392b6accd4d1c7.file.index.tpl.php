@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-22 06:11:50
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-11 23:40:45
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3177654465cde3e8078-80360183%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1413951107,
+      1 => 1415745639,
       2 => 'file',
     ),
   ),
@@ -78,7 +78,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <a class="page-scroll" href="#materiales">Materiales</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Juego</a>
+                        <a class="page-scroll" href="#login">Juego</a>
                     </li>
                 </ul>
 
@@ -517,6 +517,54 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
         </div>
     </aside>
 
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-lg-6 text-left-center">
+                        <h3>Login</h3>
+                    </div>
+                    <form name="loginForm" id="loginForm" method="post" action="index.php?action=login" >
+                        <div class="row">
+                            <div class="formu">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="user" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="pass" class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                    
+                                    <button type="submit">loguearse</button>
+                                </div>
+                        </div>
+                    </form>
+                    <script src="./js/check_login.js"></script>
+                </div>
+                <div class="col-lg-6">
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <div class="team-member">
+                                        <img src="img/team/logo.png" class="img-responsive img-circle" alt="">
+                                     </div>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-xl"<a href="#registro" class="portfolio-link" data-toggle="modal"></a>registrarse</button>
+                                </div>
+                </div>
+        </div>
+    </section>
+
+
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -530,16 +578,18 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                     <div class="col-lg-6 text-left-center">
                         <h3>Login</h3>
                     </div>
-                    <form name="sentMessage" id="contactForm" novalidate>
+                   <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
+                    <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=login" >
+                       <!--  <form method="post" action="index.php?action=login"> -->
                         <div class="row">
                             <div class="formu">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <input type="text" name="user" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
+                                        <input type="text" name="pass" class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     
@@ -548,11 +598,14 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                             <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
-                                    <button type="submit" class="btn btn-xl"   
-                                    <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button>
+                                    <!-- <button type="submit" class="btn btn-xl"   
+                                    <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button> -->
+                                    <button type="submit" class="btn btn-xl" >  
+                                    loguearse</button>
                                 </div>
                         </div>
                     </form>
+                    <script src="./js/check_login.js"></script>
                 </div>
                 <div class="col-lg-6">
                     
@@ -624,7 +677,7 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+                        <div id="calendario_modal" class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Calendario</h2>
                             <p class="item-intro text-muted">Configure turno</p>
