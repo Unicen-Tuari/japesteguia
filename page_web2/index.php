@@ -71,12 +71,24 @@
 			echo "Error de Parametros";
 		}
 	}
+	elseif($_REQUEST['action']=='register')
+	{	
+		include "./controllers/IndexController.php";
+		$controller_r = new IndexController();
+		$controller_r->actionRegister();		
+	}
 	elseif($_REQUEST['action']=='login')
 	{	
-		echo "entre a login";
 		include "./controllers/IndexController.php";
 		$controller_l = new IndexController();
 		$controller_l->actionLogin();		
+	}
+	elseif($_REQUEST['action']=='logout')
+	{	
+		// echo "string";
+		include "./controllers/IndexController.php";
+		$controller_l = new IndexController();
+		$controller_l->actionLogout();		
 	}
 	else if($_REQUEST['action']=='jugar')
 	{

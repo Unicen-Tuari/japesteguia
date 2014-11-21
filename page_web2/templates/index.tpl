@@ -49,9 +49,28 @@
                     <li>
                         <a class="page-scroll" href="#materiales">Materiales</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#login">Juego</a>
+                    {if isset($usuario)} 
+                       <li>
+                        <a class="page-scroll" href="#calendario">Calendario</a>
+                       </li>
+                    <li class="dropdown">
+                      <a id="btn-jugadores" data-toggle="dropdown" class="dropdown-toggle">{$usuario} <b class="caret"></b></a>
+                        <ul class="dropdown-menu"data-no-collapse="true">
+
+                          <li><a href="index.php?action=logout">Salir</a></li>
+                        
+                            
+                        </ul>
                     </li>
+                    {/if} 
+                    {if !isset($usuario)}
+                    <li>
+                        <!-- <a class="page-scroll" href="#login">Ingresar</a> -->
+                        <a class="page-scroll" href="#contact">Ingresar</a>
+                    </li>
+
+                    {/if}
+                    
                 </ul>
 
             </div>
@@ -466,7 +485,7 @@
         </div>
     </aside>
 
-    <section id="login">
+    <!-- <section id="login">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -511,14 +530,81 @@
                                 </div>
                 </div>
         </div>
-    </section>
+    </section> -->
 
-
+    {if !isset($usuario)}
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Juego</h2>
+                    <h2 class="section-heading">Ingresar</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-lg-6 text-left-center">
+                        <h3>Login</h3>
+                    </div>
+                   <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
+                    <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=login" >
+                        <div class="row">
+                            <div class="formu">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="user" class="form-control" placeholder="Su email *" id="name" required data-validation-required-message="Por favor ingrese su nombre.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="pass" class="form-control" placeholder="Su contraseña *" id="name" required data-validation-required-message="Please enter your pass.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <!-- <button type="submit" class="btn btn-xl"   
+                                    <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button> -->
+                                    <button type="submit" class="btn btn-xl" >  
+                                    loguearse</button>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <div class="team-member">
+                                        <img src="img/team/logo.png" class="img-responsive img-circle" alt="">
+                                     </div>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-xl"<a href="#registro" class="portfolio-link" data-toggle="modal"></a>registrarse</button>
+                                </div>
+                </div>
+                    <!-- </form>
+                </div>
+                
+                <!-- calendario -->
+                <!-- <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.png" alt="">
+                            </div> -->
+            <!-- </div> -->
+            <!-- <div class="row">
+                <img class="img-responsive" src="images/estilo/calendario.png" alt="">
+            </div> -->
+        </div>
+       
+    </section>
+    {/if}
+    {if isset($usuario)}
+    <section id="calendario">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Calendario</h2>
                     <!-- <h3 class="section-subheading text-muted">Ingresar o registrarse</h3> -->
                 </div>
             </div>
@@ -554,7 +640,7 @@
                                 </div>
                         </div>
                     </form>
-                    <script src="./js/check_login.js"></script>
+                    
                 </div>
                 <div class="col-lg-6">
                     
@@ -614,6 +700,7 @@
             </div> -->
         </div>
     </section>
+    {/if}
 
     <div class="portfolio-modal modal fade" id="calendario" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -629,7 +716,7 @@
                         <div id="calendario_modal" class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Calendario</h2>
-                            <p class="item-intro text-muted">Configure turno</p>
+                            <p class="item-intro text-muted">Configure turno!!!</p>
                             <img class="img-responsive" src="img/portfolio/calendario.png" alt="">
                            
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
@@ -640,6 +727,7 @@
         </div>
     </div>
     <!-- registro -->
+    <!-- <section id="contact">
     <div class="portfolio-modal modal fade" id="registro" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -652,7 +740,6 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
                             <h2>Registro</h2>
                             <p class="item-intro text-muted">Complete los campos</p>
                 <div class="col-lg-12">     
@@ -678,31 +765,12 @@
                                     </div>
                                     <br><br>
                                     <div class="form-group">
-                                        <!-- <div class="col-xs-offset-3 col-xs-9"> -->
                                         <label class="checkbox-inline">
                                             <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
                                         </label>
                                      </div>
                                     </div>
                                     
-                                    <!-- <div class="form-group">
-                                        <label class="control-label col-xs-3">F. Nacimiento:</label>
-                                        <div class="col-xs-3">
-                                            <select class="form-control">
-                                                <option>Dia</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-xs-3">
-                                            <select class="form-control">
-                                                <option>Mes</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-xs-3">
-                                            <select class="form-control">
-                                                <option>Año</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                               
@@ -721,6 +789,13 @@
             </div>
         </div>
     </div>
+    </section> -->
+   <!--  comienzo madal registrarse -->
+ 
+
+
+
+    
 
     
 

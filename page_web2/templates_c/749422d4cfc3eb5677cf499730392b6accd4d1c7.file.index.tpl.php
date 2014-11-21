@@ -1,31 +1,32 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-11 23:40:45
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-21 21:21:30
          compiled from ".\templates\index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3177654465cde3e8078-80360183%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:4626546e2b3a3e4ff1-50479415%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1415745639,
+      1 => 1416601288,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3177654465cde3e8078-80360183',
+  'nocache_hash' => '4626546e2b3a3e4ff1-50479415',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_54465cdeb46fd2_97423202',
+  'unifunc' => 'content_546e2b3a6a4297_65270626',
   'variables' => 
   array (
+    'usuario' => 0,
     'jugadores' => 0,
     'indice' => 0,
     'jugador' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54465cdeb46fd2_97423202')) {function content_54465cdeb46fd2_97423202($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
+<?php if ($_valid && !is_callable('content_546e2b3a6a4297_65270626')) {function content_546e2b3a6a4297_65270626($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
 
 
     <!-- Navigation -->
@@ -77,9 +78,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li>
                         <a class="page-scroll" href="#materiales">Materiales</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#login">Juego</a>
+                    <?php if (isset($_smarty_tpl->tpl_vars['usuario']->value)){?> 
+                       <li>
+                        <a class="page-scroll" href="#calendario">Calendario</a>
+                       </li>
+                    <li class="dropdown">
+                      <a id="btn-jugadores" data-toggle="dropdown" class="dropdown-toggle"><?php echo $_smarty_tpl->tpl_vars['usuario']->value;?>
+ <b class="caret"></b></a>
+                        <ul class="dropdown-menu"data-no-collapse="true">
+
+                          <li><a href="index.php?action=logout">Salir</a></li>
+                        
+                            
+                        </ul>
                     </li>
+                    <?php }?> 
+                    <?php if (!isset($_smarty_tpl->tpl_vars['usuario']->value)){?>
+                    <li>
+                        <!-- <a class="page-scroll" href="#login">Ingresar</a> -->
+                        <a class="page-scroll" href="#contact">Ingresar</a>
+                    </li>
+
+                    <?php }?>
+                    
                 </ul>
 
             </div>
@@ -517,7 +538,7 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
         </div>
     </aside>
 
-    <section id="login">
+    <!-- <section id="login">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -562,14 +583,81 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                 </div>
                 </div>
         </div>
-    </section>
+    </section> -->
 
-
+    <?php if (!isset($_smarty_tpl->tpl_vars['usuario']->value)){?>
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Juego</h2>
+                    <h2 class="section-heading">Ingresar</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-lg-6 text-left-center">
+                        <h3>Login</h3>
+                    </div>
+                   <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
+                    <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=login" >
+                        <div class="row">
+                            <div class="formu">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" name="user" class="form-control" placeholder="Su email *" id="name" required data-validation-required-message="Por favor ingrese su nombre.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="pass" class="form-control" placeholder="Su contraseña *" id="name" required data-validation-required-message="Please enter your pass.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <!-- <button type="submit" class="btn btn-xl"   
+                                    <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button> -->
+                                    <button type="submit" class="btn btn-xl" >  
+                                    loguearse</button>
+                                </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <div class="team-member">
+                                        <img src="img/team/logo.png" class="img-responsive img-circle" alt="">
+                                     </div>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-xl"<a href="#registro" class="portfolio-link" data-toggle="modal"></a>registrarse</button>
+                                </div>
+                </div>
+                    <!-- </form>
+                </div>
+                
+                <!-- calendario -->
+                <!-- <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.png" alt="">
+                            </div> -->
+            <!-- </div> -->
+            <!-- <div class="row">
+                <img class="img-responsive" src="images/estilo/calendario.png" alt="">
+            </div> -->
+        </div>
+       
+    </section>
+    <?php }?>
+    <?php if (isset($_smarty_tpl->tpl_vars['usuario']->value)){?>
+    <section id="calendario">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Calendario</h2>
                     <!-- <h3 class="section-subheading text-muted">Ingresar o registrarse</h3> -->
                 </div>
             </div>
@@ -605,7 +693,7 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                 </div>
                         </div>
                     </form>
-                    <script src="./js/check_login.js"></script>
+                    
                 </div>
                 <div class="col-lg-6">
                     
@@ -665,6 +753,7 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
             </div> -->
         </div>
     </section>
+    <?php }?>
 
     <div class="portfolio-modal modal fade" id="calendario" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -680,7 +769,7 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                         <div id="calendario_modal" class="modal-body">
                             <!-- Project Details Go Here -->
                             <h2>Calendario</h2>
-                            <p class="item-intro text-muted">Configure turno</p>
+                            <p class="item-intro text-muted">Configure turno!!!</p>
                             <img class="img-responsive" src="img/portfolio/calendario.png" alt="">
                            
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
@@ -691,6 +780,7 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
         </div>
     </div>
     <!-- registro -->
+    <!-- <section id="contact">
     <div class="portfolio-modal modal fade" id="registro" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -703,7 +793,6 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
                             <h2>Registro</h2>
                             <p class="item-intro text-muted">Complete los campos</p>
                 <div class="col-lg-12">     
@@ -729,31 +818,12 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                     </div>
                                     <br><br>
                                     <div class="form-group">
-                                        <!-- <div class="col-xs-offset-3 col-xs-9"> -->
                                         <label class="checkbox-inline">
                                             <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
                                         </label>
                                      </div>
                                     </div>
                                     
-                                    <!-- <div class="form-group">
-                                        <label class="control-label col-xs-3">F. Nacimiento:</label>
-                                        <div class="col-xs-3">
-                                            <select class="form-control">
-                                                <option>Dia</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-xs-3">
-                                            <select class="form-control">
-                                                <option>Mes</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-xs-3">
-                                            <select class="form-control">
-                                                <option>Año</option>
-                                            </select>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                               
@@ -772,6 +842,101 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
             </div>
         </div>
     </div>
+    </section> -->
+   <!--  comienzo madal registrarse -->
+ 
+<div class="portfolio-modal modal fade" id="registro" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                           <!--  comienzo register -->
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-lg-7"> 
+                                
+                                    <h3>Registro</h3>
+                                
+                               <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
+                                <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=login" >
+                                    <div class="row">
+                                        <div class="formu">
+                                            <div class="col-md-6" >
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Name</p>
+                                                    <input type="text" name="name" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Lastname</p>
+                                                    <input type="text" name="lastname"class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your lastname.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Pass</p>
+                                                    <input type="password" name="pass"class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Email</p>
+                                                    <input type="email" name="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Telephone</p>
+                                                    <input type="tel" name="tel"class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <br><br>
+                                                <div class="form-group">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
+                                                    </label>
+                                                 </div>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                            <div class="col-lg-12 text-center">
+                                                <div id="success"></div>
+                                                <!-- <button type="submit" class="btn btn-xl"   
+                                                <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button> -->
+                                                <button type="submit" class="btn btn-xl" >  
+                                                Registrarse</button>
+                                            </div>
+                                        <div class="clearfix"></div>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                                    </div>
+                                </form>
+                               
+                            </div>
+                            
+                            
+                    </div>
+    
+
+                           <!--  fin register -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
 
     
 

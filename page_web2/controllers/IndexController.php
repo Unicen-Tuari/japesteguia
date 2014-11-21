@@ -1,56 +1,65 @@
 <?php
 
+include "./models/modelo_acceso.php";
+include "./models/modelo_jugadores.php";
+include "views/IndexView.php";
 class IndexController{
+
 	
 	public function actionIndex(){
 		// traigo todos los datos del modelo y renderizo todos los jugadores,
 		// materiales,y cargo lo estatico en la pagina general.
-		include "./models/modelo_jugadores.php";
-		include "views/IndexView.php";
+		
+		
 		$jugadores=new Jugadores();
 		$view = new IndexView();
 		$j=$jugadores->load();
 		if (array_key_exists('user', $_SESSION)) {
-			echo "estas logueado !!!!";
-			$view->set_usuario($_SESSION['user']);
+			// echo "estas logueado !!!!";
+			$usuario=substr($_SESSION['user'], 0, 9);
+			$view->set_usuario($usuario);
+			// $view->set_email($_SESSION['email']);
+
 		}
 		// seteo a la vista la info basica de jugadores traidos del modelo
 		$view->set_jugadores($j);
 		$view->render();
 	}
 
+	
+
 	public function actionLogin(){
-		// Aqui hay que reemplazar por un modelo 
-		include "./models/modelo_acceso.php";
+		
 		$access = new Accesos();
 		$usuario= $_POST['user'];	 
 		$contraseña=$_POST['pass'];
-		$par=$access->buscar_usuario($usuario,$contraseña);
-		// $user = 'admin';
-		// $pass = 'admin';
 		
-		// $ar_datos_usuario=$this->comprobar_existencia_usuario($email);
-	
-		// Acceso
-		// if($par)
-		// var_dump($par);
-		// die();
+		$par=$access->buscar_usuario($usuario,$contraseña);
+		
 		if (($par!=null)&&(count($par)>0)){
 			if(array_key_exists('existe', $par[0])){
-			// if(($usuario==$par[0]['user'])&&($contraseña==$par[0]['pass'])){
-				// $_SESSION['sesion_usuario'] = $par[0]['id_usuario'];
+
 				$_SESSION['user'] = $usuario;
+				$_SESSION['pass'] = $contraseña;
+				
 				$this->actionIndex();
 				// echo "estas logueado";
 			}
 		}else{
-				echo "consulta vacia";
-			 }
-		//reemplazar por mesaje de error tipo alertify
-		// else{
-		// 	$this->actionLoginForm();
-		// }	
+				// echo "consulta vacia";
+				include "./views/ErrorView.php";
+				$error=new ErrorView();
+				$error->show_error();
+			 }	
 		
+	}
+
+	public function actionLogout(){
+		session_destroy();
+		header("Location:index.php");
+		// $this->actionIndex();
+
+		// $this->actionLoginForm();
 	}
 }
 

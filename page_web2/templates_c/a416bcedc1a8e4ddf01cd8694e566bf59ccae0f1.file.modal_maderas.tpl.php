@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-22 04:58:50
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-21 15:22:51
          compiled from ".\templates\modal_maderas.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3208654471d6a9abf40-29497308%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:26776546f4abbb2ce29-09941666%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3208654471d6a9abf40-29497308',
+  'nocache_hash' => '26776546f4abbb2ce29-09941666',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_54471d6ab59b24_67309330',
+  'unifunc' => 'content_546f4abbcbb588_70177057',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54471d6ab59b24_67309330')) {function content_54471d6ab59b24_67309330($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_546f4abbcbb588_70177057')) {function content_546f4abbcbb588_70177057($_smarty_tpl) {?>
 
         <h2>Maderas</h2>
         <p class="item-intro text-muted">Nombres y caracter&iacute;sticas </p>
