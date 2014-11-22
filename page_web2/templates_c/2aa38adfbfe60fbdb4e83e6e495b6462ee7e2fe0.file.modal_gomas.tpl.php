@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-10-22 04:32:01
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-21 23:23:03
          compiled from ".\templates\modal_gomas.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:137075447172126eeb6-79368140%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:5970546fbb47cb9222-82902954%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '137075447172126eeb6-79368140',
+  'nocache_hash' => '5970546fbb47cb9222-82902954',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_54471721528464_44099403',
+  'unifunc' => 'content_546fbb4802a553_04000229',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54471721528464_44099403')) {function content_54471721528464_44099403($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_546fbb4802a553_04000229')) {function content_546fbb4802a553_04000229($_smarty_tpl) {?>
 
         <h2>Gomas</h2>
         <p class="item-intro text-muted">Nombres y caracter&iacute;sticas </p>

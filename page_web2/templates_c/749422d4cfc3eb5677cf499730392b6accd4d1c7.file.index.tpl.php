@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-21 21:21:30
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-22 00:21:54
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4626546e2b3a3e4ff1-50479415%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1416601288,
+      1 => 1416612103,
       2 => 'file',
     ),
   ),
@@ -614,6 +614,7 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                     
                                 </div>
                             </div>
+                            
                             <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
@@ -867,50 +868,46 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                     <h3>Registro</h3>
                                 
                                <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
-                                <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=login" >
+                                <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=register" >
                                     <div class="row">
                                         <div class="formu">
                                             <div class="col-md-6" >
                                                 <div class="form-group">
-                                                    <p class="item-intro text-muted">Name</p>
-                                                    <input type="text" name="name" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                                    <p class="item-intro text-muted">Nombre</p>
+                                                    <input type="text" name="name" class="form-control" placeholder="Su nombre *" id="name" required data-validation-required-message="Please enter your name.">
                                                     <p class="help-block text-danger"></p>
                                                 </div>
                                                 <div class="form-group">
-                                                    <p class="item-intro text-muted">Lastname</p>
-                                                    <input type="text" name="lastname"class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your lastname.">
+                                                    <p class="item-intro text-muted">Apellido</p>
+                                                    <input type="text" name="lastname"class="form-control" placeholder="Su apellido *" id="name" required data-validation-required-message="Please enter your lastname.">
                                                     <p class="help-block text-danger"></p>
                                                 </div>
                                                 <div class="form-group">
-                                                    <p class="item-intro text-muted">Pass</p>
-                                                    <input type="password" name="pass"class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
+                                                    <p class="item-intro text-muted">Contrase&ntilde;a</p>
+                                                    <input type="password" name="pass"class="form-control" placeholder="Su contraseña *" id="name" required data-validation-required-message="Please enter your name.">
                                                     <p class="help-block text-danger"></p>
                                                 </div>
                                                 <div class="form-group">
-                                                    <p class="item-intro text-muted">Email</p>
-                                                    <input type="email" name="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                                    <p class="item-intro text-muted">Correo</p>
+                                                    <input type="email" name="email" class="form-control" placeholder="Su correo *" id="email" required data-validation-required-message="Please enter your email address.">
                                                     <p class="help-block text-danger"></p>
                                                 </div>
                                                 <div class="form-group">
-                                                    <p class="item-intro text-muted">Telephone</p>
-                                                    <input type="tel" name="tel"class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                                    <p class="item-intro text-muted">Tel&eacute;fono</p>
+                                                    <input type="tel" name="tel"class="form-control" placeholder="Su teléfono " id="phone" required data-validation-required-message="Please enter your phone number.">
                                                     <p class="help-block text-danger"></p>
                                                 </div>
                                                 <br><br>
-                                                <div class="form-group">
+                                                <!-- <div class="form-group">
                                                     <label class="checkbox-inline">
                                                         <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
                                                     </label>
-                                                 </div>
-                                                
-                                                
+                                                </div> -->
+                    
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                             <div class="col-lg-12 text-center">
-                                                <div id="success"></div>
-                                                <!-- <button type="submit" class="btn btn-xl"   
-                                                <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button> -->
                                                 <button type="submit" class="btn btn-xl" >  
                                                 Registrarse</button>
                                             </div>

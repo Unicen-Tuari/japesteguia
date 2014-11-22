@@ -8,8 +8,15 @@ class Accesos extends ModeloDB{
 	
 	public function load(){
 	}
-	public function buscar_usuario($user,$pass){
 
+	public function buscar_email($email){
+
+		return $this->query("SELECT 1 as existe
+  							FROM usuarios
+  							WHERE (LOWER(email) = LOWER('$email')) ");
+	}
+
+	public function buscar_usuario($user,$pass){
 		return $this->query("SELECT 1 as existe
   							FROM usuarios
   							WHERE (LOWER(email) = LOWER('$user')) and (LOWER(pass) = LOWER('$pass'))");

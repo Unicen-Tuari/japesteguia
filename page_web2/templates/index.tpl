@@ -561,6 +561,7 @@
                                     
                                 </div>
                             </div>
+                            
                             <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
@@ -792,6 +793,90 @@
     </section> -->
    <!--  comienzo madal registrarse -->
  
+<div class="portfolio-modal modal fade" id="registro" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                           <!--  comienzo register -->
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-lg-7"> 
+                                
+                                    <h3>Registro</h3>
+                                
+                               <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
+                                <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=register" >
+                                    <div class="row">
+                                        <div class="formu">
+                                            <div class="col-md-6" >
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Nombre</p>
+                                                    <input type="text" name="name" class="form-control" placeholder="Su nombre *" id="name" required data-validation-required-message="Please enter your name.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Apellido</p>
+                                                    <input type="text" name="lastname"class="form-control" placeholder="Su apellido *" id="name" required data-validation-required-message="Please enter your lastname.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Contrase&ntilde;a</p>
+                                                    <input type="password" name="pass"class="form-control" placeholder="Su contraseña *" id="name" required data-validation-required-message="Please enter your name.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Correo</p>
+                                                    <input type="email" name="email" class="form-control" placeholder="Su correo *" id="email" required data-validation-required-message="Please enter your email address.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Tel&eacute;fono</p>
+                                                    <input type="tel" name="tel"class="form-control" placeholder="Su teléfono " id="phone" required data-validation-required-message="Please enter your phone number.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <br><br>
+                                                <!-- <div class="form-group">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
+                                                    </label>
+                                                </div> -->
+                    
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                            <div class="col-lg-12 text-center">
+                                                <button type="submit" class="btn btn-xl" >  
+                                                Registrarse</button>
+                                            </div>
+                                        <div class="clearfix"></div>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                                    </div>
+                                </form>
+                               
+                            </div>
+                            
+                            
+                    </div>
+    
+
+                           <!--  fin register -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

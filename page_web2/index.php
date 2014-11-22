@@ -48,7 +48,7 @@
 		if(array_key_exists('id_jugador', $_GET)){
 			if (isset($_GET['id_jugador'])) {
 			include "./controllers/JugadorController.php";
-			// print_r($_GET) ;
+			
 			$controller_j = new JugadorController();
 			$controller_j->actionMostrarJugador($_GET['id_jugador']);
 			}
