@@ -77,17 +77,6 @@
                     </form>
                 </div>
                 
-                    <!-- </form>
-                </div>
-                
-                <!-- calendario -->
-                <!-- <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.png" alt="">
-                            </div> -->
-            <!-- </div> -->
-            <!-- <div class="row">
-                <img class="img-responsive" src="images/estilo/calendario.png" alt="">
-            </div> -->
         </div>
        
     </section>

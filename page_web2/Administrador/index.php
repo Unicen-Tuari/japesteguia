@@ -70,12 +70,12 @@
 		$mat->actionAgregarMaterial();
 				
 	}
-	elseif($_REQUEST['action']=='register')
-	{	
-		include "./controllers/IndexController.php";
-		$controller_r = new IndexController();
-		$controller_r->actionRegister();		
-	}
+	// elseif($_REQUEST['action']=='register')
+	// {	
+	// 	include "./controllers/IndexController.php";
+	// 	$controller_r = new IndexController();
+	// 	$controller_r->actionRegister();		
+	// }
 	elseif($_REQUEST['action']=='login')
 	{	
 		include "./controllers/IndexController.php";
@@ -89,11 +89,7 @@
 		$controller_l = new IndexController();
 		$controller_l->actionLogout();		
 	}
-	else if($_REQUEST['action']=='jugar')
-	{
-
-
-	}
+	
 	else 
 	{
 		echo "ERROR ACCION NO VALIDA";

@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-24 18:25:47
-         compiled from ".\templates\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:24035546e2b3a73c843-35821999%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-24 18:35:05
+         compiled from ".\templates\header_error.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2744854736c49054502-12262561%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
+    'bd954c93f3aa4b2cd1189f66e2ece54811ed45b2' => 
     array (
-      0 => '.\\templates\\header.tpl',
-      1 => 1416849945,
+      0 => '.\\templates\\header_error.tpl',
+      1 => 1416850498,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '24035546e2b3a73c843-35821999',
+  'nocache_hash' => '2744854736c49054502-12262561',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_546e2b3a744543_48154273',
   'variables' => 
   array (
     'usuario' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_54736c490b9e23_57736270',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_546e2b3a744543_48154273')) {function content_546e2b3a744543_48154273($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_54736c490b9e23_57736270')) {function content_54736c490b9e23_57736270($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -69,8 +69,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Tandil es tenis de mesa </a>
-
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -113,13 +112,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         </ul>
                     </li>
                     <?php }?> 
-                    <?php if (!isset($_smarty_tpl->tpl_vars['usuario']->value)){?>
+                   <!--  <?php if (!isset($_smarty_tpl->tpl_vars['usuario']->value)){?>
                     <li>
-                        <!-- <a class="page-scroll" href="#login">Ingresar</a> -->
+                       
                         <a class="page-scroll" href="#contact">Ingresar</a>
                     </li>
 
-                    <?php }?>
+                    <?php }?> -->
                     
                 </ul>
 

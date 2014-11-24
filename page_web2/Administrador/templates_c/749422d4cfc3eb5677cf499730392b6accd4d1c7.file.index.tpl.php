@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-23 01:17:00
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-24 18:21:18
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4626546e2b3a3e4ff1-50479415%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1416701812,
+      1 => 1416849490,
       2 => 'file',
     ),
   ),
@@ -103,17 +103,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </form>
                 </div>
                 
-                    <!-- </form>
-                </div>
-                
-                <!-- calendario -->
-                <!-- <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.png" alt="">
-                            </div> -->
-            <!-- </div> -->
-            <!-- <div class="row">
-                <img class="img-responsive" src="images/estilo/calendario.png" alt="">
-            </div> -->
         </div>
        
     </section>

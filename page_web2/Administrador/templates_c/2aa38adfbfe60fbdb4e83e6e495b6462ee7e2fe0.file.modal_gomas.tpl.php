@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-24 03:33:50
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-24 17:47:52
          compiled from ".\templates\modal_gomas.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5970546fbb47cb9222-82902954%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2aa38adfbfe60fbdb4e83e6e495b6462ee7e2fe0' => 
     array (
       0 => '.\\templates\\modal_gomas.tpl',
-      1 => 1416796063,
+      1 => 1416847669,
       2 => 'file',
     ),
   ),
@@ -55,6 +55,7 @@ $_smarty_tpl->tpl_vars['arr_indices']->_loop = true;
                                                         <th>Tipo</th>
                                                         <th>Velocidad</th>
                                                         <th>Efecto</th>
+                                                        <th>Agregar</th>
                                                         <th>Editar</th>
                                                         <th>Eliminar</th>
                                                     </tr>
@@ -81,6 +82,13 @@ $_smarty_tpl->tpl_vars['arr_caract']->_loop = true;
                                                         <td><?php echo $_smarty_tpl->tpl_vars['arr_caract']->value['efecto'];?>
 </td>
                                                        <!--  asociar el button con el id del material para dsp usarlo para la ABM en la base -->
+                                                    <td> <form name = "modificar" action="index.php?action=agregarMaterial" method="POST">
+                                                    <input name = "id_mat" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
+&amp;<?php echo $_smarty_tpl->tpl_vars['arr_caract']->value['id_goma'];?>
+">
+                                                    <button type = "submit">Agregar</button>
+                                                    </form> 
+                                                    </td>
                                                     <td> <form name = "modificar" action="index.php?action=editarMaterial" method="POST">
                                                         <input name = "id_mat" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
 &amp;<?php echo $_smarty_tpl->tpl_vars['arr_caract']->value['id_goma'];?>
@@ -88,13 +96,14 @@ $_smarty_tpl->tpl_vars['arr_caract']->_loop = true;
                                                         <button type = "submit">Editar</button>
                                                         </form> 
                                                     </td>
-                                                        <td> <form name = "modificar" action="index.php?action=eliminarMaterial" method="POST">
-                                                        <input name = "id_mat" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
+                                                    <td> <form name = "modificar" action="index.php?action=eliminarMaterial" method="POST">
+                                                    <input name = "id_mat" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
 &amp;<?php echo $_smarty_tpl->tpl_vars['arr_caract']->value['id_goma'];?>
 ">
-                                                        <button type = "submit">Eliminar</button>
-                                                        </form> 
+                                                    <button type = "submit">Eliminar</button>
+                                                    </form> 
                                                     </td>
+                                                    
 
                                                     </tr>
                                                 </tbody>

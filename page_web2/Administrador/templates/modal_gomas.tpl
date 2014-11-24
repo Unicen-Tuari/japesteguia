@@ -18,6 +18,7 @@
                                                         <th>Tipo</th>
                                                         <th>Velocidad</th>
                                                         <th>Efecto</th>
+                                                        <th>Agregar</th>
                                                         <th>Editar</th>
                                                         <th>Eliminar</th>
                                                     </tr>
@@ -32,6 +33,11 @@
                                                         <td>{$arr_caract.velocidad}</td>
                                                         <td>{$arr_caract.efecto}</td>
                                                        <!--  asociar el button con el id del material para dsp usarlo para la ABM en la base -->
+                                                    <td> <form name = "modificar" action="index.php?action=agregarMaterial" method="POST">
+                                                    <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_goma}">
+                                                    <button type = "submit">Agregar</button>
+                                                    </form> 
+                                                    </td>
                                                     <td> <form name = "modificar" action="index.php?action=editarMaterial" method="POST">
                                                         <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_goma}">
                                                         <button type = "submit">Editar</button>
@@ -42,12 +48,6 @@
                                                     <button type = "submit">Eliminar</button>
                                                     </form> 
                                                     </td>
-                                                    <td> <form name = "modificar" action="index.php?action=agregarMaterial" method="POST">
-                                                    <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_goma}">
-                                                    <button type = "submit">Agregar</button>
-                                                    </form> 
-                                                    </td>
-
                                                     </tr>
                                                 </tbody>
 

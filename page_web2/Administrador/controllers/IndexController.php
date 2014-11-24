@@ -55,22 +55,29 @@ class IndexController{
 		
 		if (($par!=null)&&(count($par)>0)){
 			if(array_key_exists('existe', $par[0])){
-
-				$_SESSION['user'] = $user;
-				$_SESSION['pass'] = $contraseña;
-				
-				$this->actionIndex();
+				$par_admin=$access->buscar_usuario_admin($user,$contraseña);
+				if (($par_admin!=null)&&(count($par_admin)>0)){
+					if(array_key_exists('existe', $par_admin[0])){
+						$_SESSION['user'] = $user;
+						$_SESSION['pass'] = $contraseña;
+						
+						$this->actionIndex();
 				// echo "estas logueado";
+					}	
+				}else{
+						$mensaje="Error,la cuenta no tiene permiso de administrador!";
+						$error=new ErrorView();
+						$error->show_error($mensaje);
+					}
 			}
+		
 		}else{
 				// echo "consulta vacia";
 				$mensaje="Error,verifique que los datos ingresados sean los correctos!";
 				$error=new ErrorView();
 				$error->show_error($mensaje);
 			 }	
-		
 	}
-
 	public function actionLogout(){
 		session_destroy();
 		header("Location:index.php");

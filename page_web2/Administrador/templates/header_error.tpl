@@ -1,29 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-24 18:25:47
-         compiled from ".\templates\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:24035546e2b3a73c843-35821999%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
-$_valid = $_smarty_tpl->decodeProperties(array (
-  'file_dependency' => 
-  array (
-    '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
-    array (
-      0 => '.\\templates\\header.tpl',
-      1 => 1416849945,
-      2 => 'file',
-    ),
-  ),
-  'nocache_hash' => '24035546e2b3a73c843-35821999',
-  'function' => 
-  array (
-  ),
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_546e2b3a744543_48154273',
-  'variables' => 
-  array (
-    'usuario' => 0,
-  ),
-  'has_nocache_code' => false,
-),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_546e2b3a744543_48154273')) {function content_546e2b3a744543_48154273($_smarty_tpl) {?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -69,8 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Tandil es tenis de mesa </a>
-
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -79,7 +53,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <?php if (isset($_smarty_tpl->tpl_vars['usuario']->value)){?> 
+                    {if isset($usuario)} 
                     <li class="dropdown">
                       <a id="btn-jugadores" data-toggle="dropdown" class="dropdown-toggle">Jugadores <b class="caret"></b></a>
                         <ul class="dropdown-menu"data-no-collapse="true">
@@ -103,8 +77,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <a class="page-scroll" href="#calendario">Calendario</a>
                        </li>
                     <li class="dropdown">
-                      <a id="btn-jugadores" data-toggle="dropdown" class="dropdown-toggle"><?php echo $_smarty_tpl->tpl_vars['usuario']->value;?>
- <b class="caret"></b></a>
+                      <a id="btn-jugadores" data-toggle="dropdown" class="dropdown-toggle">{$usuario} <b class="caret"></b></a>
                         <ul class="dropdown-menu"data-no-collapse="true">
 
                           <li><a href="index.php?action=logout">Salir</a></li>
@@ -112,14 +85,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                             
                         </ul>
                     </li>
-                    <?php }?> 
-                    <?php if (!isset($_smarty_tpl->tpl_vars['usuario']->value)){?>
+                    {/if} 
+                   <!--  {if !isset($usuario)}
                     <li>
-                        <!-- <a class="page-scroll" href="#login">Ingresar</a> -->
+                       
                         <a class="page-scroll" href="#contact">Ingresar</a>
                     </li>
 
-                    <?php }?>
+                    {/if} -->
                     
                 </ul>
 
@@ -127,4 +100,4 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
-    </nav><?php }} ?>
+    </nav>
