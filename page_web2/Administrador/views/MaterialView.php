@@ -29,10 +29,21 @@ class MaterialView extends View	{
 		$this->smarty->assign("desc_goma", $desc_goma);
 		$this->smarty->display('form_goma.tpl');
 	}
+	function render_form_madera($desc_madera){
+		$this->smarty->assign("desc_madera", $desc_madera);
+		$this->smarty->display('form_madera.tpl');
+	}
 	// function render_modal_maderas(){
 	// 	$this->smarty->display('modal_maderas.tpl');
 	// }
-	
+	function render_form_goma_vacio(){
+		$this->smarty->display('form_goma_vacia.tpl');
+	}
+
+	function render_form_madera_vacio(){
+		$this->smarty->display('form_madera_vacia.tpl');
+	}
+
 	
 }
 

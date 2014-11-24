@@ -1,12 +1,24 @@
 {include file="header.tpl" title=foo}
-
+    <!-- <header>
+        <div class="container">
+            <div class="intro">
+            </div>
+        </div>
+    </header> -->
     <section id="material">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                                 
                     <h2>Gomas</h2>
-                    <p class="item-intro text-muted">Nombres y caracter&iacute;sticas </p>    
+                    
+                    <p class="item-intro text-muted">Nombres y caracter&iacute;sticas </p>  
+
+                    <form name = "modificar" action="index.php?action=agregarMaterial" method="POST">
+                        <input name = "id_mat" type = "hidden" value = "{$id_mat}">
+                        <button type = "submit" class="btn btn-default">Agregar</button>
+                    </form> 
+                                                    
                     <div class="table-responsive">
                                  <table class="table table-bordered table-hover">
                                     {foreach key=distribuidor item=arr_indices from=$materiales}
@@ -18,7 +30,7 @@
                                                         <th>Tipo</th>
                                                         <th>Velocidad</th>
                                                         <th>Efecto</th>
-                                                        <th>Agregar</th>
+                                                        
                                                         <th>Editar</th>
                                                         <th>Eliminar</th>
                                                     </tr>
@@ -33,11 +45,7 @@
                                                         <td>{$arr_caract.velocidad}</td>
                                                         <td>{$arr_caract.efecto}</td>
                                                        <!--  asociar el button con el id del material para dsp usarlo para la ABM en la base -->
-                                                    <td> <form name = "modificar" action="index.php?action=agregarMaterial" method="POST">
-                                                    <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_goma}">
-                                                    <button type = "submit">Agregar</button>
-                                                    </form> 
-                                                    </td>
+                                                   
                                                     <td> <form name = "modificar" action="index.php?action=editarMaterial" method="POST">
                                                         <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_goma}">
                                                         <button type = "submit">Editar</button>
@@ -55,8 +63,6 @@
                                     {/foreach}
                                     </table>
                                          <p>Fecha: Noviembre 2014</p>                 
-                               
-                    
                     </div>
                </div>
             

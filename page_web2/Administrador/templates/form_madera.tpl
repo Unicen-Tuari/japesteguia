@@ -10,48 +10,41 @@
                 .col-md-3 .col-md-offset-3 -->
                 <div class="col-lg-6 col-lg-offset-3 ">
                     <hr>
-                    <h2 class="intro-text text-center"><strong>Modificar Goma</strong></h2>
+                    <h2 class="intro-text text-center"><strong>Modificar Madera</strong></h2>
                     <hr>
-                    {foreach key=id_goma item=goma from=$desc_goma}  
-                    <h2 class="intro-text text-center"><strong>{$goma.nombre}</strong></h2>  
 
-                 <!--    <h2 >{$id_mat}</h2> -->
+                    {foreach key=id_madera item=madera from=$desc_madera}  
+                    <h2 class="intro-text text-center"><strong>{$madera.nombre}</strong></h2>  
+
 
                     <form role="form" action="index.php?action=actualizarMaterial" method="POST">
                         <div class="row">
                             
                             <div class="form-group col-lg-12">
-                                <label>Id goma:</label>
-                                <input name="id" type="number" class="form-control" value = "{$goma.id_goma}" readonly>
+                                <label>Id madera:</label>
+                                <input name="id" type="number" class="form-control" value = "{$madera.id_madera}" readonly>
                             </div>
                             <div class="form-group col-lg-12">
                                 <label> Id distribuidor: </label>
-                                <input name="distribuidor" type="number" class="form-control" value = "{$goma.id_distribuidor}">
+                                <input name="distribuidor" type="number" class="form-control" value = "{$madera.id_distribuidor}">
                             </div>
                             <div class="form-group col-lg-12">
                                 <label>Nombre: </label>
-                                <input name="nombre" type="text" class="form-control" value = "{$goma.nombre}">
+                                <input name="nombre" type="text" class="form-control" value = "{$madera.nombre}">
                             </div>
                             <div class="form-group col-lg-12">
-                                <label>Esponja: </label>
-                                <input name="esponja" type="number" class="form-control" value = "{$goma.esponja}">
+                                <label>Mango: </label>
+                                <input name="mango" type="text" class="form-control" value = "{$madera.mango}">
                             </div>
                             <div class="form-group col-lg-12">
-                                <label>Dureza: </label>
-                                <input name="dureza" type="number" class="form-control" value = "{$goma.dureza}">
+                                <label>Peso: </label>
+                                <input name="peso" type="number" class="form-control" value = "{$madera.peso}">
                             </div>
                             <div class="form-group col-lg-12">
                                 <label>Tipo de juego: </label>
-                                <input name="tipo_juego" type="text" class="form-control" value = "{$goma.tipo_juego}">
+                                <input name="tipo_juego" type="text" class="form-control" value = "{$madera.tipo_juego}">
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>Velocidad: </label>
-                                <input name="velocidad" type="number" class="form-control" value = "{$goma.velocidad}">
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <label>Efecto: </label>
-                                <input name="efecto" type="number" class="form-control" value = "{$goma.efecto}">
-                            </div>
+                            
                            
                             <div class="form-group col-lg-12">
                                                                 

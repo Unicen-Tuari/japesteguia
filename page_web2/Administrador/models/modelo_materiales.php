@@ -28,6 +28,12 @@ class Materiales extends ModeloDB{
 		WHERE(id_goma = $id_goma)") ;
 		
 	}
+	public function load_madera($id_madera){
+		return $this->query("SELECT *
+		FROM maderas 
+		WHERE(id_madera = $id_madera)") ;
+		
+	}
 
 	public function actualizar_goma($id,$distribuidor,$nombre,$esponja,$dureza,
         		$tipo_juego,$velocidad,$efecto)
@@ -40,6 +46,18 @@ class Materiales extends ModeloDB{
             WHERE (id_goma = $id)
 		");
 	}
+
+	public function actualizar_madera($id,$distribuidor,$nombre,$mango,$peso,
+        		$tipo_juego)
+	{
+		return $this->query("
+			UPDATE maderas
+			SET id_distribuidor = '$distribuidor',nombre = '$nombre',
+			mango = '$mango', peso= '$peso', tipo_juego= '$tipo_juego'
+            WHERE (id_madera = $id)
+		");
+	}
+
 	public function eliminar_goma($id)
 	{
 		return $this->query("
@@ -48,7 +66,35 @@ class Materiales extends ModeloDB{
 		");
 	}
 
+	public function eliminar_madera($id)
+	{
+		return $this->query("
+			DELETE FROM maderas
+            WHERE (id_madera = $id)
+		");
+	}
 
+	public function agregar_goma($distribuidor,$nombre,$esponja,$dureza,
+        		$tipo_juego,$velocidad,$efecto)
+	{
+		return $this->query("
+			INSERT INTO gomas (id_distribuidor,nombre,esponja,dureza,
+        		tipo_juego,velocidad,efecto)
+			VALUES ('$distribuidor','$nombre','$esponja','$dureza',
+        		'$tipo_juego','$velocidad','$efecto')
+		");
+	}
+	
+	public function agregar_madera($distribuidor,$nombre,$mango,$peso,
+        		$tipo_juego)
+	{
+		return $this->query("
+			INSERT INTO maderas (id_distribuidor,nombre,mango,peso,
+        		tipo_juego)
+			VALUES ('$distribuidor','$nombre','$mango','$peso',
+        		'$tipo_juego')
+		");
+	}
 	
 }
 

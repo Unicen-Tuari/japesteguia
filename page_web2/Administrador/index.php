@@ -36,7 +36,7 @@
 			}
 		}
 		else {
-			echo "Error de Parametros";
+			echo "Error de Parametros Materiales";
 		}
 	}
 	elseif($_REQUEST['action']=='editarMaterial')
@@ -70,12 +70,14 @@
 		$mat->actionAgregarMaterial();
 				
 	}
-	// elseif($_REQUEST['action']=='register')
-	// {	
-	// 	include "./controllers/IndexController.php";
-	// 	$controller_r = new IndexController();
-	// 	$controller_r->actionRegister();		
-	// }
+	elseif($_REQUEST['action']=='agregarMaterialForm')
+	{	
+		include "./controllers/MaterialController.php";
+		
+		$mat = new MaterialController();
+		$mat->actionAgregarMaterialForm();
+				
+	}
 	elseif($_REQUEST['action']=='login')
 	{	
 		include "./controllers/IndexController.php";
