@@ -14,8 +14,12 @@
                     <hr>
                     {foreach key=id_maquina item=goma from=$desc_goma}  
                     <h2 class="intro-text text-center"><strong>{$goma.nombre}</strong></h2>  
-                    <form role="form" action="index.php?action=actualizarMat" method="POST">
+
+                 <!--    <h2 >{$id_mat}</h2> -->
+
+                    <form role="form" action="index.php?action=actualizarMaterial" method="POST">
                         <div class="row">
+                            
                             <div class="form-group col-lg-12">
                                 <label>Id goma:</label>
                                 <input name="id" type="number" class="form-control" value = "{$goma.id_goma}">
@@ -50,8 +54,8 @@
                             </div>
                            
                             <div class="form-group col-lg-12">
-                                <input type="hidden" name="yaModificado" >                                
-                                 <input name = "id_maq" type = "hidden" value = "{$maquina['id_Contenido']}&amp;{$maquina['estado']}">
+                                                                
+                                 <input name = "id_mat" type = "hidden" value = "{$id_mat}">
                                 <button type="submit" class="btn btn-default">Modificar</button>
                             </div>
                         </div>

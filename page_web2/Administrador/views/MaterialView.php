@@ -33,6 +33,7 @@ class MaterialView extends View	{
 	// 	$this->smarty->display('modal_maderas.tpl');
 	// }
 	
+	
 }
 
 

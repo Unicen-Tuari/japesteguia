@@ -28,6 +28,27 @@ class Materiales extends ModeloDB{
 		WHERE(id_goma = $id_goma)") ;
 		
 	}
+
+	public function actualizar_goma($id,$distribuidor,$nombre,$esponja,$dureza,
+        		$tipo_juego,$velocidad,$efecto)
+	{
+		return $this->query("
+			UPDATE gomas
+			SET id_distribuidor = '$distribuidor',nombre = '$nombre',
+			esponja = '$esponja', dureza= '$dureza', tipo_juego= '$tipo_juego',
+			velocidad= '$velocidad', efecto= '$efecto'
+            WHERE (id_goma = $id)
+		");
+	}
+	public function eliminar_goma($id)
+	{
+		return $this->query("
+			DELETE FROM gomas
+            WHERE (id_goma = $id)
+		");
+	}
+
+
 	
 }
 

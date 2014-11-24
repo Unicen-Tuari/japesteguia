@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-23 23:43:31
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-24 03:01:52
          compiled from ".\templates\form_goma.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2071954725a90170e63-13872677%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4ba39a4ce06458b548cfba7e31bd301cd371235b' => 
     array (
       0 => '.\\templates\\form_goma.tpl',
-      1 => 1416782577,
+      1 => 1416794499,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'desc_goma' => 0,
     'goma' => 0,
-    'maquina' => 0,
+    'id_mat' => 0,
     'distribuidor' => 0,
     'arr_indices' => 0,
     'arr_caract' => 0,
@@ -52,8 +52,13 @@ $_smarty_tpl->tpl_vars['goma']->_loop = true;
 ?>  
                     <h2 class="intro-text text-center"><strong><?php echo $_smarty_tpl->tpl_vars['goma']->value['nombre'];?>
 </strong></h2>  
-                    <form role="form" action="index.php?action=actualizarMat" method="POST">
+
+                 <!--    <h2 ><?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
+</h2> -->
+
+                    <form role="form" action="index.php?action=actualizarMaterial" method="POST">
                         <div class="row">
+                            
                             <div class="form-group col-lg-12">
                                 <label>Id goma:</label>
                                 <input name="id" type="number" class="form-control" value = "<?php echo $_smarty_tpl->tpl_vars['goma']->value['id_goma'];?>
@@ -96,9 +101,8 @@ $_smarty_tpl->tpl_vars['goma']->_loop = true;
                             </div>
                            
                             <div class="form-group col-lg-12">
-                                <input type="hidden" name="yaModificado" >                                
-                                 <input name = "id_maq" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['maquina']->value['id_Contenido'];?>
-&amp;<?php echo $_smarty_tpl->tpl_vars['maquina']->value['estado'];?>
+                                                                
+                                 <input name = "id_mat" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
 ">
                                 <button type="submit" class="btn btn-default">Modificar</button>
                             </div>

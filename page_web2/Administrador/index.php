@@ -42,9 +42,32 @@
 	elseif($_REQUEST['action']=='editarMaterial')
 	{	
 		include "./controllers/MaterialController.php";
-		
+
 		$mat = new MaterialController();
 		$mat->actionEditarMaterial();
+				
+	}
+	elseif($_REQUEST['action']=='eliminarMaterial')
+	{	
+		include "./controllers/MaterialController.php";
+
+		$mat = new MaterialController();
+		$mat->actionEliminarMaterial();
+				
+	}
+	elseif($_REQUEST['action']=='actualizarMaterial')
+	{	
+		include "./controllers/MaterialController.php";
+		
+		$mat = new MaterialController();
+		$mat->actionActualizarMaterial();		
+	}
+	elseif($_REQUEST['action']=='agregarMaterial')
+	{	
+		include "./controllers/MaterialController.php";
+		
+		$mat = new MaterialController();
+		$mat->actionAgregarMaterial();
 				
 	}
 	elseif($_REQUEST['action']=='register')
