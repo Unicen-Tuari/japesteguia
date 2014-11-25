@@ -33,6 +33,10 @@ class JugadorView extends View	{
 		$this->smarty->assign("videos", $vid_j);
 	}
 
+	function render_form_jugador_vacio(){
+		$this->smarty->display('form_jugador_vacio.tpl');
+	}
+
 	function render_modal(){
 		$this->smarty->display('modal - copia.tpl');
 	}

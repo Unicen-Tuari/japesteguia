@@ -7,12 +7,12 @@
                 <div class="col-lg-12 text-center">
                                 
                     <h2>Jugadores {$nac}</h2>
+                    <!-- <h2>id jugador: {$jugadores[$jugador['id_jugador']]}</h2> -->
 
                     <p class="item-intro text-muted">Informacion general </p> 
                     <!-- <div class="btn-group btn-group-lg"> -->
-                    <form name = "modificar" action="index.php?action=agregarMaterial" method="POST">
-                        <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_madera}">
-                        
+                    <form name = "modificar" action="index.php?action=agregarJugador" method="POST">
+                        <input name = "nac" type = "hidden" value = "{$nac}">
                         <button type = "submit" class="btn btn-default">Agregar</button>
                     </form> 
 
@@ -70,9 +70,9 @@
                                         <table class="table table-bordered table-hover">
                                                 <thead>
                                                         <tr class="warning">
-                                                            <th>Id_jugador</th>
-                                                            <th>Ruta_img_chica</th>
-                                                            <th>Ruta_img_grande</th>
+                                                            <th>Id jugador</th>
+                                                            <th>Ruta imagen chica</th>
+                                                            <th>Ruta imagen grande</th>
                                                         </tr>
                                                     </thead>
                                             {foreach key=id_jugador item=jugador from=$jugadores}
@@ -90,8 +90,9 @@
                                             <table class="table table-bordered table-hover">
                                                     <thead>
                                                             <tr class="warning">
-                                                                <th>Id_jugador</th>
-                                                                <th>Rutas_videos</th>
+                                                                <th>Id jugador</th>
+                                                                <th>Id video</th>
+                                                                <th>Rutas videos</th>
                                                             </tr>
                                                         </thead>
                                                 {foreach key=indice item=arr_videos from=$videos}
@@ -99,6 +100,8 @@
                                                         <tbody>
                                                             <tr>
                                                                 <td>{$video['id_jugador']}</td>
+                                                                <td>{$video['id_video']}
+                                                                </td>
                                                                 <td>{utf8_encode($video['ruta'])}</td>
                                                             </tr>
                                                         </tbody>  

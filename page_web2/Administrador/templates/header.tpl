@@ -59,8 +59,8 @@
                       <a id="btn-jugadores" data-toggle="dropdown" class="dropdown-toggle">Jugadores <b class="caret"></b></a>
                         <ul class="dropdown-menu"data-no-collapse="true">
 
-                            <li><a href="index.php?action=listarJugadores&nac=mundiales">Mundiales</a></li>
-                            <li><a href="index.php?action=listarJugadores&nac=nacionales">Nacionales</a></li>
+                            <li><a href="index.php?action=listarJugadores&nac=Mundial">Mundiales</a></li>
+                            <li><a href="index.php?action=listarJugadores&nac=Nacional">Nacionales</a></li>
                         </ul>
                     </li>
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-25 18:21:35
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-26 00:18:27
          compiled from ".\templates\modal - copia.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1275854741a8f6d1392-91116437%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5932d66f72e591683ea299466f734ef92924d912' => 
     array (
       0 => '.\\templates\\modal - copia.tpl',
-      1 => 1416936093,
+      1 => 1416957499,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'nac' => 0,
+    'jugador' => 0,
+    'jugadores' => 0,
     'id_mat' => 0,
     'arr_caract' => 0,
-    'jugadores' => 0,
-    'jugador' => 0,
     'videos' => 0,
     'arr_videos' => 0,
     'video' => 0,
@@ -41,14 +41,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                 
                     <h2>Jugadores <?php echo $_smarty_tpl->tpl_vars['nac']->value;?>
 </h2>
+                    <!-- <h2>id jugador: <?php echo $_smarty_tpl->tpl_vars['jugadores']->value[$_smarty_tpl->tpl_vars['jugador']->value['id_jugador']];?>
+</h2> -->
 
                     <p class="item-intro text-muted">Informacion general </p> 
                     <!-- <div class="btn-group btn-group-lg"> -->
-                    <form name = "modificar" action="index.php?action=agregarMaterial" method="POST">
-                        <input name = "id_mat" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
-&amp;<?php echo $_smarty_tpl->tpl_vars['arr_caract']->value['id_madera'];?>
+                    <form name = "modificar" action="index.php?action=agregarJugador" method="POST">
+                        <input name = "nac" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['nac']->value;?>
 ">
-                        
                         <button type = "submit" class="btn btn-default">Agregar</button>
                     </form> 
 
@@ -127,9 +127,9 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                         <table class="table table-bordered table-hover">
                                                 <thead>
                                                         <tr class="warning">
-                                                            <th>Id_jugador</th>
-                                                            <th>Ruta_img_chica</th>
-                                                            <th>Ruta_img_grande</th>
+                                                            <th>Id jugador</th>
+                                                            <th>Ruta imagen chica</th>
+                                                            <th>Ruta imagen grande</th>
                                                         </tr>
                                                     </thead>
                                             <?php  $_smarty_tpl->tpl_vars['jugador'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['jugador']->_loop = false;
@@ -156,8 +156,9 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                             <table class="table table-bordered table-hover">
                                                     <thead>
                                                             <tr class="warning">
-                                                                <th>Id_jugador</th>
-                                                                <th>Rutas_videos</th>
+                                                                <th>Id jugador</th>
+                                                                <th>Id video</th>
+                                                                <th>Rutas videos</th>
                                                             </tr>
                                                         </thead>
                                                 <?php  $_smarty_tpl->tpl_vars['arr_videos'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['arr_videos']->_loop = false;
@@ -178,6 +179,9 @@ $_smarty_tpl->tpl_vars['video']->_loop = true;
                                                             <tr>
                                                                 <td><?php echo $_smarty_tpl->tpl_vars['video']->value['id_jugador'];?>
 </td>
+                                                                <td><?php echo $_smarty_tpl->tpl_vars['video']->value['id_video'];?>
+
+                                                                </td>
                                                                 <td><?php echo utf8_encode($_smarty_tpl->tpl_vars['video']->value['ruta']);?>
 </td>
                                                             </tr>

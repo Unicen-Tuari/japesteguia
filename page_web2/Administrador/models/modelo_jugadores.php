@@ -55,6 +55,52 @@ class Jugadores extends ModeloDB{
 						   );
 	}
 
+	public function agregar_jugador_basico($id,$tipo_jugador,$nacionalidad,$fecha,
+        		$altura,$peso,$agarre,$equipamiento,$ranking,$inicios)
+	{
+		return $this->query("
+			INSERT INTO informacion_personal (id_jugador,tipo_jugador,nacionalidad,fecha_nacimiento,
+        		altura,peso,agarre,equipamiento,ranking,inicios)
+			VALUES ('$id','$tipo_jugador','$nacionalidad','$fecha','$altura',
+        		'$peso','$agarre','$equipamiento','$ranking','$inicios')
+		");
+	}
+
+	public function obtenerId()
+	{
+		$datos =  $this->query("
+			SELECT id_jugador
+					FROM informacion_personal
+					ORDER BY id_jugador ASC
+		");
+
+		$id = array_pop ($datos); //Obtiene el ultimo dato del arreglo.....
+		return $id['id_jugador'];
+	}
+
+	public function agregar_jugador_jugadores($id,$nombre)
+	{
+		return $this->query("
+			INSERT INTO jugadores (id_jugador,nombre)
+			VALUES ('$id','$nombre')
+		");
+	}
+
+	public function agregar_jugador_imagenes($id,$img_chica,$img_grande)
+	{
+		return $this->query("
+			INSERT INTO imagenes (id_jugador,ruta,ruta_grande)
+			VALUES ('$id','$img_chica','$img_grande')
+		");
+	}
+	
+	public function agregar_jugador_video($id,$video)
+	{
+		return $this->query("
+			INSERT INTO videos (id_jugador,ruta)
+			VALUES ('$id','$video')
+		");
+	}
  
 
 	

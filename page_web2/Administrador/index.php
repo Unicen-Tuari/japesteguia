@@ -91,6 +91,22 @@
 		$mat->actionAgregarMaterialForm();
 				
 	}
+	elseif($_REQUEST['action']=='agregarJugador')
+	{	
+		include "./controllers/JugadorController.php";
+		
+		$mat = new JugadorController();
+		$mat->actionAgregarJugador();
+				
+	}
+	elseif($_REQUEST['action']=='agregarJugadorForm')
+	{	
+		include "./controllers/JugadorController.php";
+
+		$mat = new JugadorController();
+		$mat->actionAgregarJugadorForm();
+				
+	}
 	elseif($_REQUEST['action']=='login')
 	{	
 		include "./controllers/IndexController.php";
