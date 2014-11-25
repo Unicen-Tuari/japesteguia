@@ -9,6 +9,7 @@ class JugadorView extends View	{
 	// 	$this->smarty->assign("jugador", $jugador);
 	// }
 
+
 	function set_jugadores($jugadores){
 		$this->smarty->assign("jugadores",$jugadores);
 	}
@@ -19,7 +20,9 @@ class JugadorView extends View	{
 		$this->smarty->assign("nac", $nac);
 	}
 
-
+	function set_usuario($usuario){
+		$this->smarty->assign("usuario", $usuario);
+	}
 	function show_image($img_j){
 		$this->smarty->assign("img", $img_j);
 	}

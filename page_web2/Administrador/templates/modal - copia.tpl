@@ -1,7 +1,4 @@
 
-    
-   
-   
 {include file="header.tpl" title=foo}
 
     <section id="material">
@@ -18,18 +15,13 @@
                         
                         <button type = "submit" class="btn btn-default">Agregar</button>
                     </form> 
-                    <!-- {foreach key=id_madera item=jugador from=$jugadores}  
-                    <h2>{$jugador['nacionalidad']}</h2>
-                    {/foreach} -->
-                    <!-- </div> -->
 
                     <div class="table-responsive">
                                  <table class="table table-bordered table-hover">
-                                    
                                                 <thead>
                                                     <tr class="warning">
-                                                        <th>Nombre</th>
                                                         <th>Id jugador</th>
+                                                        <th>Nombre</th>
                                                         <th>Tipo jugador</th>
                                                         <th>Nacionalidad</th>
                                                         <th>Fecha nacimiento</th>
@@ -39,8 +31,6 @@
                                                         <th>Equipamiento</th>
                                                         <th>Ranking</th>
                                                         <th>Inicios</th>
-                                                        <th>Ruta_c</th>
-                                                        <th>Ruta_g</th>
                                                         <th>Editar</th>
                                                         <th>Eliminar</th>
                                                     </tr>
@@ -48,65 +38,76 @@
                                         {foreach key=id_jugador item=jugador from=$jugadores}
                                                 <tbody>
                                                     <tr>
-                                                        <td>{$jugador['nombre']}</td>
                                                         <td>{$jugador['id_jugador']}</td>
+                                                        <td>{utf8_encode($jugador['nombre'])}</td>
                                                         <td>{$jugador['tipo_jugador']}</td>
                                                         <td>{$jugador['nacionalidad']}</td>
                                                         <td>{$jugador['fecha_nacimiento']}</td>
                                                         <td>{$jugador['altura']}</td>
                                                         <td>{$jugador['peso']}</td>
-                                                        <td>{$jugador['agarre']}</td>
+                                                        <td>{utf8_encode($jugador['agarre'])}</td>
                                                         <td>{$jugador['equipamiento']}</td>
                                                         <td>{$jugador['ranking']}</td>
                                                         <td>{$jugador['inicios']}</td>
-                                                        <td>{$jugador['ruta']}</td>
-                                                        <td>{$jugador['ruta_grande']}</td>
-                                                     
-                                                    
-                                                    <td> <form name = "modificar" action="index.php?action=editarMaterial" method="POST">
+                                                
+                                                        <td> <form name = "modificar" action="index.php?action=editarMaterial" method="POST">
+                                                            <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_madera}">
+                                                            <button type = "submit">Editar</button>
+                                                            </form> 
+                                                        </td>
+                                                        <td> <form name = "modificar" action="index.php?action=eliminarMaterial" method="POST">
                                                         <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_madera}">
-                                                        <button type = "submit">Editar</button>
+                                                        <button type = "submit">Eliminar</button>
                                                         </form> 
-                                                    </td>
-                                                    <td> <form name = "modificar" action="index.php?action=eliminarMaterial" method="POST">
-                                                    <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_madera}">
-                                                    <button type = "submit">Eliminar</button>
-                                                    </form> 
-                                                    </td>
+                                                        </td>
                                                     </tr>
                                                 </tbody>
 
                                             {/foreach} 
-
-
-                                                          
-                               
-                    
                     </div>
-                       <p class="item-intro text-muted">videos </p>
-                                        <div class="table-responsive">
+                       <!-- <p class="item-intro text-muted">Videos </p> -->
+                                    <div class="table-responsive">
                                         <table class="table table-bordered table-hover">
-                                            <thead>
-                                                    <tr class="warning">
-                                                        <th>Id_jugador</th>
-                                                        <th>Ruta</th>
-                                                    </tr>
-                                                </thead>
-                                        {foreach key=indice item=video from=$videos}
-                                                <tbody>
-                                                    <tr>
-                                                        <td>{$video['id_jugador']}</td>
-                                                        <td>{$video['ruta']}</td>
-                                                    </tr>
-                                                </tbody>  
-
-                                        {/foreach} 
+                                                <thead>
+                                                        <tr class="warning">
+                                                            <th>Id_jugador</th>
+                                                            <th>Ruta_img_chica</th>
+                                                            <th>Ruta_img_grande</th>
+                                                        </tr>
+                                                    </thead>
+                                            {foreach key=id_jugador item=jugador from=$jugadores}
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>{$jugador['id_jugador']}</td>
+                                                            <td>{utf8_encode($jugador['ruta'])}</td>
+                                                            <td>{utf8_encode($jugador['ruta_grande'])}</td>
+                                                        </tr>
+                                                    </tbody>           
+                                            {/foreach} 
                                         </table>
                                     </div>
-                                    <p>Fecha: Noviembre 2014</p>
-               </div>
-            
-                
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                    <thead>
+                                                            <tr class="warning">
+                                                                <th>Id_jugador</th>
+                                                                <th>Rutas_videos</th>
+                                                            </tr>
+                                                        </thead>
+                                                {foreach key=indice item=arr_videos from=$videos}
+                                                    {foreach key=indice2 item=video from=$arr_videos}
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>{$video['id_jugador']}</td>
+                                                                <td>{utf8_encode($video['ruta'])}</td>
+                                                            </tr>
+                                                        </tbody>  
+                                                      {/foreach}          
+                                                {/foreach} 
+                                            </table>
+                                        </div>
+                            <p>Fecha: Noviembre 2014</p>
+               </div>  
           </div>
     </section>
 

@@ -31,8 +31,8 @@ class JugadorController{
 		$view = new JugadorView();
 		$arr_aux=array();
 		//nuevo: $id_material por $nac
-		// $usuario=substr($_SESSION['user'], 0, 9);
-		// $view->set_usuario($usuario);
+		$usuario=substr($_SESSION['user'], 0, 9);
+		$view->set_usuario($usuario);
 		// seteo nac en vista
 		$view->set_nac_jugador($nac);
 		if($nac=='mundiales'){
@@ -47,21 +47,21 @@ class JugadorController{
 					$arr_aux=$jugadores->load_videos($arr['id_jugador']);
 					$arr_videos[$arr['id_jugador']]=$arr_aux;
 				}
-			
-			echo '<pre>';
-			print_r($arr_videos);
-			echo'<pre>';
-			$view->set_jugadores($arr_jug);
-			$view->set_videos($arr_videos);
-			$view->render_modal();
+			// echo '<pre>';
+			// print_r($arr_videos);
+			// echo'<pre>';
 		}else{
-			$mat=$materiales->load_maderas();
-			foreach ($mat as $key => $arr2) {
-					$arr_aux[$arr2['distribuidor']][]=$arr2;
+			$arr_jug=$jugadores->load_jugadores('Nacional');
+			
+			//$arr_videos tiene todos los videos para cada id_jugador
+			foreach ($arr_jug as $key => $arr) {
+					$arr_aux=$jugadores->load_videos($arr['id_jugador']);
+					$arr_videos[$arr['id_jugador']]=$arr_aux;
 				}
-			$view->show_material($arr_aux);
-			$view->render_modal_maderas();
 		}
+		$view->set_jugadores($arr_jug);
+		$view->set_videos($arr_videos);
+		$view->render_modal();
 	}	
 
 	public function actionEditarMaterial(){
