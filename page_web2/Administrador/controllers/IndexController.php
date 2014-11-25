@@ -24,25 +24,25 @@ class IndexController{
 		$view->render();
 	}
 
-	public function actionListarJugadores(){
-		// traigo todos los datos del modelo y renderizo todos los jugadores,
-		// materiales,y cargo lo estatico en la pagina general.
+	// public function actionListarJugadores(){
+	// 	// traigo todos los datos del modelo y renderizo todos los jugadores,
+	// 	// materiales,y cargo lo estatico en la pagina general.
 		
 		
-		$jugadores=new Jugadores();
-		$view = new IndexView();
-		$j=$jugadores->load();
-		if (array_key_exists('user', $_SESSION)) {
-			// echo "estas logueado !!!!";
-			$usuario=substr($_SESSION['user'], 0, 9);
-			$view->set_usuario($usuario);
-			// $view->set_email($_SESSION['email']);
+	// 	$jugadores=new Jugadores();
+	// 	$view = new IndexView();
+	// 	$j=$jugadores->load();
+	// 	if (array_key_exists('user', $_SESSION)) {
+	// 		// echo "estas logueado !!!!";
+	// 		$usuario=substr($_SESSION['user'], 0, 9);
+	// 		$view->set_usuario($usuario);
+	// 		// $view->set_email($_SESSION['email']);
 
-		}
-		// seteo a la vista la info basica de jugadores traidos del modelo
-		// $view->set_jugadores($j);
-		$view->render();
-	}
+	// 	}
+	// 	// seteo a la vista la info basica de jugadores traidos del modelo
+	// 	// $view->set_jugadores($j);
+	// 	$view->render();
+	// }
 	
 
 	public function actionLogin(){

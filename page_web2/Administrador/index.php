@@ -11,6 +11,19 @@
 		$controller = new IndexController();
 		$controller->actionIndex();		
 	}
+	else if($_REQUEST['action']=='listarJugadores')
+	{
+		if(array_key_exists('nac', $_GET)){
+			if (isset($_GET['nac'])) {
+				include "./controllers/JugadorController.php";
+				$jug = new JugadorController();
+				$jug->actionMostrarJugador($_GET['nac']);
+			}
+		}
+		else {
+			echo "Error de Parametros listar jugadores";
+		}
+	}
 	else if($_REQUEST['action']=='mostrarJugador')
 	{
 		if(array_key_exists('id_jugador', $_GET)){

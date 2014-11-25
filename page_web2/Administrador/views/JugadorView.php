@@ -9,6 +9,17 @@ class JugadorView extends View	{
 	// 	$this->smarty->assign("jugador", $jugador);
 	// }
 
+	function set_jugadores($jugadores){
+		$this->smarty->assign("jugadores",$jugadores);
+	}
+	function set_videos($arr_videos){
+		$this->smarty->assign("videos",$arr_videos);
+	}
+	function set_nac_jugador($nac){
+		$this->smarty->assign("nac", $nac);
+	}
+
+
 	function show_image($img_j){
 		$this->smarty->assign("img", $img_j);
 	}
@@ -20,8 +31,11 @@ class JugadorView extends View	{
 	}
 
 	function render_modal(){
-		$this->smarty->display('modal.tpl');
+		$this->smarty->display('modal - copia.tpl');
 	}
+
+
+	
 	
 }
 

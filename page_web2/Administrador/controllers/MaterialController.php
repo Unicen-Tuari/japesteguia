@@ -66,7 +66,7 @@ class MaterialController{
 		$view->set_usuario($usuario);
 
 		$mat=$_POST;
-        // id_mat y id_goma
+        // id_mat y id=id_goma
         if($_POST['id_mat']==0){
         	$id=$mat['id'];
         	$id_mat=$mat['id_mat'];

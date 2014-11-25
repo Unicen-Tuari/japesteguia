@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-24 21:57:25
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-25 06:20:55
          compiled from ".\templates\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:24035546e2b3a73c843-35821999%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10e0737838b4a574ef135d0c601e7b602cfaf37a' => 
     array (
       0 => '.\\templates\\header.tpl',
-      1 => 1416862589,
+      1 => 1416886888,
       2 => 'file',
     ),
   ),
@@ -84,8 +84,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                       <a id="btn-jugadores" data-toggle="dropdown" class="dropdown-toggle">Jugadores <b class="caret"></b></a>
                         <ul class="dropdown-menu"data-no-collapse="true">
 
-                            <li><a class="page-scroll" href="#portfolio">Mundiales</a></li>
-                            <li><a class="page-scroll" href="#portfolio2">Nacionales</a></li>
+                            <li><a href="index.php?action=listarJugadores&nac=mundiales">Mundiales</a></li>
+                            <li><a href="index.php?action=listarJugadores&nac=nacionales">Nacionales</a></li>
                         </ul>
                     </li>
 
