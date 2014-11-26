@@ -51,7 +51,7 @@
                                                         <td>{$jugador['inicios']}</td>
                                                 
                                                         <td> <form name = "modificar" action="index.php?action=editarJugador" method="POST">
-                                                            <input name = "id_jug" type = "hidden" value = "{$jugador['id_jugador']}">
+                                                            <input name = "id_jug" type = "hidden" value = "{$jugador['id_jugador']}&amp;{$nac}">
                                                             <button type = "submit">Editar</button>
                                                             </form> 
                                                         </td>

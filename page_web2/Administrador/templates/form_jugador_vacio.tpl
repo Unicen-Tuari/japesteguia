@@ -10,7 +10,7 @@
                 .col-md-3 .col-md-offset-3 -->
                 <div class="col-lg-6 col-lg-offset-3 ">
                     <hr>
-                    <h2 class="intro-text text-center"><strong>Agregar Jugador</strong></h2>
+                    <h2 class="intro-text text-center"><strong>Agregar Jugador {$nac}</strong></h2>
 
                     <form role="form" action="index.php?action=agregarJugadorForm" method="POST" accept-charset="UTF-8">
                         <div class="row">

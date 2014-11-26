@@ -34,11 +34,24 @@ class Jugadores extends ModeloDB{
 							group by id_jugador,id_video,ruta ");
 	}
 
-	public function load_big_images($id_jugador){
+	public function load_big_image($id_jugador){
 		return $this->query("SELECT id_jugador,ruta_grande
   							FROM imagenes 
   							WHERE (id_jugador = $id_jugador)");
 	}
+
+	public function load_image($id_jugador){
+		return $this->query("SELECT id_jugador,ruta
+  							FROM imagenes 
+  							WHERE (id_jugador = $id_jugador)");
+	}
+
+
+	// public function load_nombre_jugadores($id_jugador){
+	// 	return $this->query("SELECT nombre
+ //  							FROM jugadores 
+ //  							WHERE (id_jugador = $id_jugador)");
+	// }
 
 	
 	//fin carga de modal
@@ -54,7 +67,36 @@ class Jugadores extends ModeloDB{
 						    order by j.id_jugador"
 						   );
 	}
+	public function actualizar_jugador_basico($id,$tipo_jugador,$nacionalidad,$fecha,
+        		$altura,$peso,$agarre,$equipamiento,$ranking,$inicios)
+	{
+		return $this->query("
+			UPDATE informacion_personal
+			SET tipo_jugador = '$tipo_jugador',nacionalidad = '$nacionalidad',
+			fecha_nacimiento = '$fecha', altura= '$altura', peso= '$peso', agarre= '$agarre',
+			 equipamiento= '$equipamiento', ranking= '$ranking', inicios= '$inicios'
+            WHERE (id_jugador = $id)
+		");
+	}
 
+	public function actualizar_jugador_imagenes($id,$img_chica,$img_grande)
+	{
+		return $this->query("
+			UPDATE imagenes
+			SET id_jugador = '$id',ruta = '$img_chica',
+			ruta_grande = '$img_grande'
+            WHERE (id_jugador = $id)
+		");
+	}
+	public function actualizar_jugador_video($id_video,$video)
+	{
+		return $this->query("
+			UPDATE videos
+			SET ruta = '$video'
+            WHERE (id_video =$id_video)
+		");
+	}
+	
 	public function agregar_jugador_basico($id,$tipo_jugador,$nacionalidad,$fecha,
         		$altura,$peso,$agarre,$equipamiento,$ranking,$inicios)
 	{
@@ -78,6 +120,7 @@ class Jugadores extends ModeloDB{
 		return $id['id_jugador'];
 	}
 
+	
 	public function agregar_jugador_jugadores($id,$nombre)
 	{
 		return $this->query("

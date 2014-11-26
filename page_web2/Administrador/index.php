@@ -41,10 +41,24 @@
 	}elseif($_REQUEST['action']=='eliminarJugador')
 	{	
 		include "./controllers/JugadorController.php";
-
 		$controller_j = new JugadorController();
+
 		$controller_j->actionEliminarJugador();
 				
+	}
+	elseif($_REQUEST['action']=='editarJugador')
+	{	
+		include "./controllers/JugadorController.php";
+		$controller_j = new JugadorController();
+
+		$controller_j->actionEditarJugador();
+				
+	}
+	elseif($_REQUEST['action']=='actualizarJugador')
+	{	
+		include "./controllers/JugadorController.php";
+		$controller_j = new JugadorController();
+		$controller_j->actionActualizarJugador();		
 	}
 	else if($_REQUEST['action']=='listarMateriales')
 	{

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-26 01:18:53
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-26 02:37:38
          compiled from ".\templates\modal - copia.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1275854741a8f6d1392-91116437%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5932d66f72e591683ea299466f734ef92924d912' => 
     array (
       0 => '.\\templates\\modal - copia.tpl',
-      1 => 1416961130,
+      1 => 1416961741,
       2 => 'file',
     ),
   ),
@@ -103,6 +103,7 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                                 
                                                         <td> <form name = "modificar" action="index.php?action=editarJugador" method="POST">
                                                             <input name = "id_jug" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['jugador']->value['id_jugador'];?>
+&amp;<?php echo $_smarty_tpl->tpl_vars['nac']->value;?>
 ">
                                                             <button type = "submit">Editar</button>
                                                             </form> 

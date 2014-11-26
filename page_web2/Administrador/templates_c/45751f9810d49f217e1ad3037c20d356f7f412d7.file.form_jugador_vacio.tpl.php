@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-26 00:14:08
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-26 05:46:30
          compiled from ".\templates\form_jugador_vacio.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:140445474cc405c3272-94991678%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '45751f9810d49f217e1ad3037c20d356f7f412d7' => 
     array (
       0 => '.\\templates\\form_jugador_vacio.tpl',
-      1 => 1416957128,
+      1 => 1416977167,
       2 => 'file',
     ),
   ),
@@ -39,7 +39,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 .col-md-3 .col-md-offset-3 -->
                 <div class="col-lg-6 col-lg-offset-3 ">
                     <hr>
-                    <h2 class="intro-text text-center"><strong>Agregar Jugador</strong></h2>
+                    <h2 class="intro-text text-center"><strong>Agregar Jugador <?php echo $_smarty_tpl->tpl_vars['nac']->value;?>
+</strong></h2>
 
                     <form role="form" action="index.php?action=agregarJugadorForm" method="POST" accept-charset="UTF-8">
                         <div class="row">
