@@ -22,6 +22,7 @@ class Materiales extends ModeloDB{
 		ORDER BY(m.id_distribuidor)");
 	}
 	
+	
 }
 
 ?>

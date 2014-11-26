@@ -23,53 +23,35 @@ class Accesos extends ModeloDB{
 	}
 
 
+	public function register($arr_reg){	
 
-	public function register($arr_reg)
-	{
-			
 			$nombre			=	$arr_reg["name"];
 			$apellido		=	$arr_reg["lastname"];
 			$pass			=	$arr_reg["pass"];
 			$email			=	$arr_reg["email"];
 			$telefono		=	$arr_reg["tel"];
-			
 
-			$sql = "INSERT INTO usuarios(
-						
+
+
+
+		return $this->query("INSERT INTO usuarios(
 					nombre				,
 					apellido			, 
 					pass			    ,
 					email               ,
-					telefono            
-					)
-			VALUES( 
+					telefono   )
+		VALUES( 
 					
-					:nombre				, 
-					:apellido			,				
-					:pass               ,
-					:email              ,
-					:telefono           
-			 	  )";
+					'$nombre'			, 
+					'$apellido'			,				
+					'$pass'             ,
+					'$email'            ,
+					'$telefono'          
+			 	  )");
 
 
-			$q=$this->connection(); 
-			$preparado=$q->prepare($sql);
-
-			$preparado->execute(
-								array
-									(		
-																						
-										':nombre'				=>$nombre				, 
-										':apellido'				=>$apellido				,				
-										':pass'					=>$pass					,
-										':email'				=>$email	            ,
-								 		':telefono'				=>$telefono			     
-								 		
-					 				 )
-								);
-
-
-		}
+	}
+	
 	
 
 	

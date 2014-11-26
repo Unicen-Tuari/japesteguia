@@ -9,6 +9,7 @@ class MaterialController{
 		$materiales=new Materiales();
 		$view = new MaterialView();
 		$arr_aux=array();
+		
 		if($id_material==0){
 			$mat=$materiales->load_gomas();
 			foreach ($mat as $key => $arr2) {

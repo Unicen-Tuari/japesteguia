@@ -561,7 +561,7 @@
                                     
                                 </div>
                             </div>
-                            
+
                             <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
@@ -600,6 +600,8 @@
        
     </section>
     {/if}
+
+    <!-- calendario!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     {if isset($usuario)}
     <section id="calendario">
         <div class="container">
@@ -610,96 +612,88 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="col-lg-6 text-left-center">
-                        <h3>Login</h3>
-                    </div>
-                   <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
-                    <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=login" >
-                       <!--  <form method="post" action="index.php?action=login"> -->
-                        <div class="row">
-                            <div class="formu">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="user" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="pass" class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <!-- <button type="submit" class="btn btn-xl"   
-                                    <a href="#calendario" class="portfolio-link" data-toggle="modal"></a>loguearse</button> -->
-                                    <button type="submit" class="btn btn-xl" >  
-                                    loguearse</button>
-                                </div>
-                        </div>
-                    </form>
-                    
-                </div>
-                <div class="col-lg-6">
-                    
-                    <!-- <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="formu">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Pass *" id="name" required data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                            </div>
-                        </div> -->
-                           <!--  <div class="col-lg-6 text-center"> -->
-                            <!-- <div class="clearfix"></div> -->
+                <!-- <div class="col-lg-6"> -->
+                    <!-- <div class="col-lg-6 text-left-center">
                         
-                            <!-- <div class="col-sm-4">
-                            <div class="team-member">
-                                    <img src="img/team/logo.png" class="img-responsive img-circle" alt="">
-                            </div>
-                             </div> -->
-                       <!--  </div> -->
-                           <!-- </div> -->
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <div class="team-member">
-                                        <img src="img/team/logo.png" class="img-responsive img-circle" alt="">
-                                     </div>
-                                </div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button type="submit" class="btn btn-xl"<a href="#registro" class="portfolio-link" data-toggle="modal"></a>registrarse</button>
-                                </div>
-                </div>
-                    <!-- </form>
-                </div>
+                    </div> -->
+                  
+         
+                    <!-- </form> -->
+                    
+                <!-- </div> -->
                 
-                <!-- calendario -->
-                <!-- <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.png" alt="">
-                            </div> -->
-            <!-- </div> -->
-            <!-- <div class="row">
-                <img class="img-responsive" src="images/estilo/calendario.png" alt="">
-            </div> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+</head>
+
+    <body>
+
+        
+        <style type="text/css">
+
+            .calendario{
+                width: 70%;
+                height: 610px;
+                margin-left: 16%;
+                margin-top: 10%;
+                background-color: #fed136;
+                color: grey;
+
+            }
+            .diaCalender{
+                width: 14.2%;
+                height: 120px;
+                float: left;
+                background-color:#fed136;
+                opacity: 0.5;
+                border: left 0.5% white;
+                border: right 0.5% white;
+                border-style: solid;
+            }
+        
+
+        </style>
+    <!-- <div class="row"> -->
+
+        <div class = "calendario">
+           <!-- <div class = "diaCalender" id = "1" onclick = "dia">{$i.dni_persona}<button>reservar</button></div> -->
+            
+                <!-- <div class = "diaCalender" id = "1" onclick = "dia">1</div> -->
+                {for $foo=1 to {$mes}}
+                <div class = "diaCalender" id = "{$foo}" onclick = "dia"><strong>{$foo}</strong>
+                   
+                    <div class="btn-group">
+                      <!--   <button class="btn btn-success">reservar</button> -->
+                   <!--      <button class="btn btn-warning">retar</button>
+                        <button class="btn btn-danger">cancelar</button> -->
+                        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">reservar</button>
+                        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">retar</button>
+                        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">cancelar</button>
+                    </div>
+                
+                </div>
+                {/for}
+
         </div>
+    </div>
+    </body>
+
+</html>
+    
+        </div>
+        </div>
+
     </section>
     {/if}
 
@@ -879,7 +873,92 @@
 </div>
 
 
+<!-- modal calendario!!!!!!!!!!!!!!!!1 -->
 
+<div class="portfolio-modal modal fade" id="calendario" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+                           <!--  comienzo register -->
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-lg-7"> 
+                                
+                                    <h3>Registro</h3>
+                                
+                               <!--  <form name="sentMessage" id="contactForm" novalidate method="post" > -->
+                                <form name="sentMessage2" id="contactForm2" method="post" action="index.php?action=register" >
+                                    <div class="row">
+                                        <div class="formu">
+                                            <div class="col-md-6" >
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Nombre</p>
+                                                    <input type="text" name="name" class="form-control" placeholder="Su nombre *" id="name" required data-validation-required-message="Please enter your name.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Apellido</p>
+                                                    <input type="text" name="lastname"class="form-control" placeholder="Su apellido *" id="name" required data-validation-required-message="Please enter your lastname.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Contrase&ntilde;a</p>
+                                                    <input type="password" name="pass"class="form-control" placeholder="Su contraseña *" id="name" required data-validation-required-message="Please enter your name.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Correo</p>
+                                                    <input type="email" name="email" class="form-control" placeholder="Su correo *" id="email" required data-validation-required-message="Please enter your email address.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <p class="item-intro text-muted">Tel&eacute;fono</p>
+                                                    <input type="tel" name="tel"class="form-control" placeholder="Su teléfono " id="phone" required data-validation-required-message="Please enter your phone number.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <br><br>
+                                                <!-- <div class="form-group">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
+                                                    </label>
+                                                </div> -->
+                    
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                            <div class="col-lg-12 text-center">
+                                                <button type="submit" class="btn btn-xl" >  
+                                                Registrarse</button>
+                                            </div>
+                                        <div class="clearfix"></div>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                                    </div>
+                                </form>
+                               
+                            </div>
+                            
+                            
+                    </div>
+    
+
+                           <!--  fin register -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     
 
     

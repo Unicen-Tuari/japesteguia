@@ -16,6 +16,9 @@ class IndexView extends View	{
 		$this->smarty->assign("error_logeo", true);
 	}
 
+	function set_calendario_inicial($mes){
+		$this->smarty->assign("mes", $mes);
+	}
 	
 	function render(){
 		$this->smarty->display('index.tpl');

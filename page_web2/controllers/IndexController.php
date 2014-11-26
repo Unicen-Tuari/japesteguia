@@ -2,6 +2,7 @@
 
 include "./models/modelo_acceso.php";
 include "./models/modelo_jugadores.php";
+include "./models/modelo_calendario.php";
 include "views/IndexView.php";
 include "./views/ErrorView.php";
 
@@ -14,8 +15,12 @@ class IndexController{
 		
 		
 		$jugadores=new Jugadores();
+		$calendario=new Calendario();
 		$view = new IndexView();
 		$j=$jugadores->load();
+
+		//nuevo calendario
+		// $c=$calendario->load_calendario_inicial();
 		if (array_key_exists('user', $_SESSION)) {
 			// echo "estas logueado !!!!";
 			$usuario=substr($_SESSION['user'], 0, 9);
@@ -25,6 +30,11 @@ class IndexController{
 		}
 		// seteo a la vista la info basica de jugadores traidos del modelo
 		$view->set_jugadores($j);
+		$mes=31;
+
+		//seteo a la vista el calendario para el usuario correspondiente
+		$view->set_calendario_inicial($mes);
+		
 		$view->render();
 	}
 
@@ -92,39 +102,6 @@ class IndexController{
 	}
 }
 
-// public function login()
-// 			{
-				
 
-// 			function crypt_blowfish_bydinvaders($contraseña, $digito = 7)
-// 				{
-// 					$set_salt = './1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-// 					$salt = sprintf('$2a$%02d$', $digito);
-// 					for($i = 0; $i < 22; $i++)
-// 						{
-// 							$salt .= $set_salt[mt_rand(0, 22)];
-// 						}
-// 					return crypt($contraseña, $salt);
-// 				}
-// 								/*datos del form login*/
-				
-// 				$email= $_POST['email_login'];	 
-// 				$contraseña=$_POST['pass_login'];
-// 				$ar_datos_usuario=$this->comprobar_existencia_usuario($email);/*choca los 2 capos contra la base*/
-
-// 				if( crypt($contraseña, $ar_datos_usuario['pass']) == $ar_datos_usuario['pass'])
-// 					{
-
-// 						$_SESSION['sesionUsuario']=$ar_datos_usuario['id'];
-// 						$_SESSION['emailUsuario']=$_POST['email_login'];	
-// 				    	$this->Home();//le pasa los datos a la funcion home definida en este controlador
-// 					}
-// 				else
-// 				   { 
-// 				   	include_once("./View/View_error_login.php");
-// 				    $error=new View_error_login();
-// 				    $error->error_login();
-// 				   }
-// 			}
 
 ?>

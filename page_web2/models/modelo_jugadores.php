@@ -42,7 +42,7 @@ class Jugadores extends ModeloDB{
 
 	
 	//fin carga de modal
-
+	//funciones  calendario
 
  
 
