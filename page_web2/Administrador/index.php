@@ -24,21 +24,7 @@
 			echo "Error de Parametros listar jugadores";
 		}
 	}
-	else if($_REQUEST['action']=='mostrarJugador')
-	{
-		if(array_key_exists('id_jugador', $_GET)){
-			if (isset($_GET['id_jugador'])) {
-			include "./controllers/JugadorController.php";
-			
-			$controller_j = new JugadorController();
-			$controller_j->actionMostrarJugador($_GET['id_jugador']);
-			}
-		else {
-			echo "Error de Parametros";
-		}
-
-		}	
-	}elseif($_REQUEST['action']=='eliminarJugador')
+	elseif($_REQUEST['action']=='eliminarJugador')
 	{	
 		include "./controllers/JugadorController.php";
 		$controller_j = new JugadorController();
@@ -50,7 +36,6 @@
 	{	
 		include "./controllers/JugadorController.php";
 		$controller_j = new JugadorController();
-
 		$controller_j->actionEditarJugador();
 				
 	}
@@ -141,15 +126,9 @@
 		$controller_l = new IndexController();
 		$controller_l->actionLogout();		
 	}
-	
 	else 
 	{
 		echo "ERROR ACCION NO VALIDA";
 	}
-
-	
-
-	
-
 
 ?>
