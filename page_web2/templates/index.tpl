@@ -611,6 +611,7 @@
                     <!-- <h3 class="section-subheading text-muted">Ingresar o registrarse</h3> -->
                 </div>
             </div>
+
             <div class="row">
                 <!-- <div class="col-lg-6"> -->
                     <!-- <div class="col-lg-6 text-left-center">
@@ -646,7 +647,7 @@
                 width: 70%;
                 height: 610px;
                 margin-left: 16%;
-                margin-top: 10%;
+                margin-top: 2%;
                 background-color: #fed136;
                 color: grey;
 
@@ -665,7 +666,21 @@
 
         </style>
     <!-- <div class="row"> -->
-
+    <!-- <div class="btn-group">
+        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">Noviembre</button>
+        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">Noviembre</button>
+    </div> -->
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">Noviembre</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">Diciembre</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">Enero</button>
+          </div>
+    </div>
         <div class = "calendario">
            <!-- <div class = "diaCalender" id = "1" onclick = "dia">{$i.dni_persona}<button>reservar</button></div> -->
             
@@ -677,9 +692,14 @@
                       <!--   <button class="btn btn-success">reservar</button> -->
                    <!--      <button class="btn btn-warning">retar</button>
                         <button class="btn btn-danger">cancelar</button> -->
-                        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">reservar</button>
-                        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">retar</button>
-                        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">cancelar</button>
+
+                        <button a href="#form_reserva" class="portfolio-link" data-toggle="modal" class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">reservar</button>
+                        <button a href="#form_reserva" class="portfolio-link" data-toggle="modal" class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">aceptar</button>
+                        <button a href="#form_reserva" class="portfolio-link" data-toggle="modal" class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">cancelar</button>
+
+                        
+                       <!--  <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">aceptar</button>
+                        <button class="btn-group btn-group-justified"class="btn btn-info btn-block regular-link">cancelar</button> -->
                     </div>
                 
                 </div>
@@ -697,7 +717,7 @@
     </section>
     {/if}
 
-    <div class="portfolio-modal modal fade" id="calendario" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="form_reserva" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -710,9 +730,49 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div id="calendario_modal" class="modal-body">
                             <!-- Project Details Go Here -->
-                            <h2>Calendario</h2>
-                            <p class="item-intro text-muted">Configure turno!!!</p>
-                            <img class="img-responsive" src="img/portfolio/calendario.png" alt="">
+                            <div class="container">        
+
+                                <div class="row">
+                                    <div class="box">
+                                        <!-- <div class="col-lg-3 "></div>
+                                        .col-md-3 .col-md-offset-3 -->
+                                        <div class="col-lg-3 col-lg-offset-3 ">
+                                            <hr>
+                                            <h2 class="intro-text text-center"><strong>Cargar partido</strong></h2>
+                                            <hr>
+                                            <form role="form" action="index.php?action=cargar_modal_calendario" method="POST">
+                                                <div class="row">
+                                                    
+                                                    <div class="form-group col-lg-12">
+                                                        <label>Fecha:</label>
+                                                        <input name="fecha" type="number" class="form-control" value = "{$foo}" readonly>
+                                                    </div>
+                                                    <div class="form-group col-lg-12">
+                                                        <label>Horario: </label>
+                                                        <input name="horario" type="text" class="form-control" value = "predeterminados">
+                                                    </div>
+                                                    <div class="form-group col-lg-12">
+                                                        <label>Lugar: </label>
+                                                        <input name="lugar" type="text" class="form-control" value = "predeterminados" >
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-lg-12">
+                                                        <label>Nuevo lugar: </label>
+                                                        <input name="nuevo" type="number" class="form-control" >
+                                                    </div>
+                                                    
+                                                    <div class="form-group col-lg-12">                       
+                                                        <!--  <input name = "nac" type = "hidden" value = "{$nac}"> -->
+                                                        <button type="submit" class="btn btn-default">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                            
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
                         </div>
