@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-26 00:18:27
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-26 01:18:53
          compiled from ".\templates\modal - copia.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1275854741a8f6d1392-91116437%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5932d66f72e591683ea299466f734ef92924d912' => 
     array (
       0 => '.\\templates\\modal - copia.tpl',
-      1 => 1416957499,
+      1 => 1416961130,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'nac' => 0,
     'jugador' => 0,
     'jugadores' => 0,
-    'id_mat' => 0,
-    'arr_caract' => 0,
     'videos' => 0,
     'arr_videos' => 0,
     'video' => 0,
@@ -40,7 +38,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <div class="col-lg-12 text-center">
                                 
                     <h2>Jugadores <?php echo $_smarty_tpl->tpl_vars['nac']->value;?>
-</h2>
+es</h2>
                     <!-- <h2>id jugador: <?php echo $_smarty_tpl->tpl_vars['jugadores']->value[$_smarty_tpl->tpl_vars['jugador']->value['id_jugador']];?>
 </h2> -->
 
@@ -103,17 +101,17 @@ $_smarty_tpl->tpl_vars['jugador']->_loop = true;
                                                         <td><?php echo $_smarty_tpl->tpl_vars['jugador']->value['inicios'];?>
 </td>
                                                 
-                                                        <td> <form name = "modificar" action="index.php?action=editarMaterial" method="POST">
-                                                            <input name = "id_mat" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
-&amp;<?php echo $_smarty_tpl->tpl_vars['arr_caract']->value['id_madera'];?>
+                                                        <td> <form name = "modificar" action="index.php?action=editarJugador" method="POST">
+                                                            <input name = "id_jug" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['jugador']->value['id_jugador'];?>
 ">
                                                             <button type = "submit">Editar</button>
                                                             </form> 
                                                         </td>
-                                                        <td> <form name = "modificar" action="index.php?action=eliminarMaterial" method="POST">
-                                                        <input name = "id_mat" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['id_mat']->value;?>
-&amp;<?php echo $_smarty_tpl->tpl_vars['arr_caract']->value['id_madera'];?>
+                                                        <td> <form name = "modificar" action="index.php?action=eliminarJugador" method="POST">
+                                                        <input name = "id_jug" type = "hidden" value = "<?php echo $_smarty_tpl->tpl_vars['jugador']->value['id_jugador'];?>
+&amp;<?php echo $_smarty_tpl->tpl_vars['nac']->value;?>
 ">
+
                                                         <button type = "submit">Eliminar</button>
                                                         </form> 
                                                         </td>

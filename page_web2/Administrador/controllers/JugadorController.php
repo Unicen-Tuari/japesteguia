@@ -53,6 +53,22 @@ class JugadorController{
 		$this->view->render_modal();
 	}	
 
+	public function actionEliminarJugador(){
+		
+		$usuario=substr($_SESSION['user'], 0, 9);
+		$this->view->set_usuario($usuario);
+
+		$jug=$_POST['id_jug'];
+		$j = explode("&", $jug);
+	
+       	$this->jugadores->eliminar_jugador_basico($j[0]);
+       	$this->jugadores->eliminar_jugador_imagenes($j[0]);
+       	$this->jugadores->eliminar_jugador_jugadores($j[0]);
+       	$this->jugadores->eliminar_jugador_video($j[0]);
+        
+        $this->actionMostrarJugador($j[1]);
+        
+    }
 	public function actionAgregarJugador(){
 		
 		

@@ -38,6 +38,13 @@
 		}
 
 		}	
+	}elseif($_REQUEST['action']=='eliminarJugador')
+	{	
+		include "./controllers/JugadorController.php";
+
+		$controller_j = new JugadorController();
+		$controller_j->actionEliminarJugador();
+				
 	}
 	else if($_REQUEST['action']=='listarMateriales')
 	{

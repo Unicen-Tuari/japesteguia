@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                                 
-                    <h2>Jugadores {$nac}</h2>
+                    <h2>Jugadores {$nac}es</h2>
                     <!-- <h2>id jugador: {$jugadores[$jugador['id_jugador']]}</h2> -->
 
                     <p class="item-intro text-muted">Informacion general </p> 
@@ -50,13 +50,14 @@
                                                         <td>{$jugador['ranking']}</td>
                                                         <td>{$jugador['inicios']}</td>
                                                 
-                                                        <td> <form name = "modificar" action="index.php?action=editarMaterial" method="POST">
-                                                            <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_madera}">
+                                                        <td> <form name = "modificar" action="index.php?action=editarJugador" method="POST">
+                                                            <input name = "id_jug" type = "hidden" value = "{$jugador['id_jugador']}">
                                                             <button type = "submit">Editar</button>
                                                             </form> 
                                                         </td>
-                                                        <td> <form name = "modificar" action="index.php?action=eliminarMaterial" method="POST">
-                                                        <input name = "id_mat" type = "hidden" value = "{$id_mat}&amp;{$arr_caract.id_madera}">
+                                                        <td> <form name = "modificar" action="index.php?action=eliminarJugador" method="POST">
+                                                        <input name = "id_jug" type = "hidden" value = "{$jugador['id_jugador']}&amp;{$nac}">
+
                                                         <button type = "submit">Eliminar</button>
                                                         </form> 
                                                         </td>

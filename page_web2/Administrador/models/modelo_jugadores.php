@@ -101,6 +101,47 @@ class Jugadores extends ModeloDB{
 			VALUES ('$id','$video')
 		");
 	}
+
+	//eliminacion jugador
+	public function eliminar_goma($id)
+	{
+		return $this->query("
+			DELETE FROM gomas
+            WHERE (id_goma = $id)
+		");
+	}
+
+	public function eliminar_jugador_basico($id)
+	{
+		return $this->query("
+			DELETE FROM informacion_personal 
+			WHERE (id_jugador = $id)
+		");
+	}
+
+	public function eliminar_jugador_jugadores($id)
+	{
+		return $this->query("
+			DELETE FROM jugadores 
+			WHERE (id_jugador = $id)
+		");
+	}
+
+	public function eliminar_jugador_imagenes($id)
+	{
+		return $this->query("
+			DELETE FROM imagenes 
+			WHERE (id_jugador = $id)
+		");
+	}
+	
+	public function eliminar_jugador_video($id)
+	{
+		return $this->query("
+			DELETE FROM videos 
+			WHERE (id_jugador = $id)
+		");
+	}
  
 
 	
